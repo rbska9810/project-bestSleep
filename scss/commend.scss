@@ -1,0 +1,288 @@
+@import "reset", "variables";
+
+.commend {
+  height: 1120px;
+  background-color: $font4;
+  padding-top: 200px;
+  &.fade {
+    .commend-box {
+      opacity: 1;
+      transform: translate(0);
+      will-change: auto;
+    }
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .star-icon {
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .commend-box {
+    height: 590px;
+    background-color: white;
+    box-shadow: 0 4px 40px rgba($color: #000000, $alpha: 0.1);
+    border-radius: 20px;
+    padding: 55px 100px;
+    position: relative;
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(50px);
+    transition-property: transform, opacity;
+    will-change: transform, opacity;
+
+    .result-box {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid $orange;
+      box-shadow: 4px 4px 40px rgba($color: $orange, $alpha: 0.15);
+      left: 0;
+      top: 0;
+      border-radius: 20px;
+      background-color: white;
+      display: none;
+
+      .result-close {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+      }
+
+      .result-content {
+        padding-top: 200px;
+
+        .result-top {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          h4 {
+            margin: 0 1rem;
+            color: $darkNavy;
+            font-size: 2.5rem;
+            font-weight: 600;
+          }
+
+          img {
+            transform: rotate(45deg);
+          }
+        }
+
+        .result-bottom {
+          padding: 60px 80px;
+          display: flex;
+          justify-content: space-between;
+          box-sizing: border-box;
+
+          &>h5 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: $navy4;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            text-align: center;
+            display: none;
+          }
+
+          .result-item {
+            width: 30%;
+            height: 170px;
+            border: 1px solid;
+            border-image: linear-gradient(0deg, #EA8249 0%, #939DBB 100%);
+            border-image-slice: 1;
+            text-align: center;
+            border-radius: 20px;
+            color: $darkNavy;
+
+            h5 {
+              font-size: 1.625rem;
+              margin: 35px 0;
+              font-weight: 600;
+            }
+
+            .result-item-content {
+              display: flex;
+              justify-content: space-around;
+
+              a {
+                font-size: 1.25rem;
+                padding: 1rem;
+                border: 1px solid;
+                border-radius: 10PX;
+
+                &:nth-child(1) {
+                  border-color: #4A556E;
+                  color: #4A556E;
+                }
+
+                &:nth-child(2) {
+                  border-color: #5F729F;
+                  color: #5F729F;
+                }
+
+                &:nth-child(3) {
+                  border-color: #A9B4CC;
+                  color: #A9B4CC;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    form {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .commend-left {
+      width: 48%;
+      max-width: 550px;
+      height: 410px;
+
+      h3 {
+        font-size: 2.625rem;
+        font-weight: 600;
+        color: $darkNavy;
+        margin-bottom: 70px;
+
+        span {
+          color: $orange;
+          font-weight: 600;
+        }
+      }
+
+      p {
+        color: $navy2;
+        font-weight: 500;
+        font-size: 1.875rem;
+        line-height: 3;
+
+        select {
+          height: 50px;
+          border: none;
+          border-bottom: 1px solid rgba($color: $orange, $alpha: 0.3);
+          text-align: center;
+          font-size: 1.625rem;
+          color: $darkNavy;
+          font-weight: 600;
+          outline: none;
+          appearance: none;
+          background: url(../images/09.commend/arrow.svg) no-repeat right 2px center;
+
+          &#mettress-or {
+            width: 80%;
+          }
+
+          &#spring-or {
+            width: 35%;
+          }
+
+          &#hard-or {
+            width: 39%;
+          }
+
+          &#price-or {
+            width: 39%;
+          }
+        }
+      }
+    }
+
+    .commend-right {
+      width: 48%;
+      max-width: 600px;
+      height: 425px;
+      border: 1px solid $orange;
+      padding: 50px 55px;
+      box-sizing: border-box;
+      border-radius: 20px;
+      box-shadow: 4px 4px 20px rgba($color: $orange, $alpha: 0.15);
+
+      p {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        font-size: 1.625rem;
+
+        &:nth-child(4) {
+          border-bottom: 1px dotted $navy5;
+          padding-bottom: 1.5rem;
+          margin-bottom: 35px;
+        }
+
+        strong {
+          font-weight: 600;
+          color: $darkNavy;
+        }
+
+        span {
+          color: $navy4;
+        }
+      }
+
+      div {
+        display: flex;
+        justify-content: space-between;
+
+        .commend-btn {
+          width: 45%;
+          height: 65px;
+          background-color: transparent;
+          color: $navy4;
+          border-radius: 20px;
+          border: 1px solid $navy4;
+          font-size: 1.75rem;
+          box-sizing: border-box;
+          transition: all .3s;
+
+          &:hover {
+            background-color: $orange;
+            color: white;
+            border: none;
+          }
+
+          &.on {
+            background-color: $orange;
+            color: white;
+            border: none;
+          }
+        }
+
+        .reset-btn {
+          width: 45%;
+          height: 65px;
+          border-radius: 20px;
+          border: 1px solid $navy4;
+          color: $navy4;
+          font-size: 1.75rem;
+          background-color: transparent;
+          box-sizing: border-box;
+          cursor: pointer;
+          transition: all .3s;
+
+          &:hover {
+            background-color: $orange;
+            color: white;
+            border: none;
+          }
+
+          &.on {
+            background-color: $orange;
+            color: white;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

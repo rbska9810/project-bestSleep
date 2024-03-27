@@ -1,0 +1,115 @@
+@import "reset", "variables";
+
+@keyframes reviewTop {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-1920px);
+  }
+}
+
+@keyframes reviewBottom {
+  from {
+    transform: translateX(-1920px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.review {
+  padding: 190px 0;
+  &.fade {
+    .title,
+    .review-slide-wrap {
+      opacity: 1;
+      transform: translate(0);
+      will-change: auto;
+    }
+  }
+
+  .title {
+    text-align: center;
+    transition: .5s;
+    opacity: 0;
+    transition-property: opacity;
+    will-change: opacity;
+  }
+
+  .star-icon {
+    width: 24px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .review-slide-wrap {
+    width: 4000px;
+    display: flex;
+    gap: 30px;
+    animation-duration: 40s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: .5s;
+    opacity: 0;
+    transition-property: transform, opacity;
+    will-change: transform, opacity;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    &.top {
+      margin-bottom: 30px;
+      animation-name: reviewTop;
+      transition-delay: .3s;
+    }
+
+    &.bottom {
+      animation-name: reviewBottom;
+      transition-delay: .5s;
+    }
+
+    .review-slide {
+      flex: 1;
+      padding: 35px 55px;
+      border: 1px solid $navy1;
+      border-radius: 15px;
+      cursor: pointer;
+
+      .review-slide-text {
+        height: 140px;
+
+        p {
+          color: $navy1;
+          font-weight: 300;
+          line-height: 1.4;
+          display: -webkit-box;
+          word-wrap: break-word;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+
+      .review-slide-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $navy1;
+
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}

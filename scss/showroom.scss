@@ -1,0 +1,198 @@
+@import "reset", "variables";
+
+.showroom {
+  padding-top: 130px;
+  padding-bottom: 60px;
+  background: url(../images/08.showroom/showroom-bg.png) no-repeat;
+  background-position: center 750px;
+  transition: .5s;
+  opacity: 0;
+  transform: translateY(50px);
+  transition-property: transform, opacity;
+  will-change: transform, opacity;
+  &.fade {
+    opacity: 1;
+    transform: translate(0);
+    will-change: auto;
+  }
+
+  .star-icon,
+  .title,
+  .sub-title {
+    text-align: center;
+  }
+
+  .star-icon {
+    margin-bottom: 30px;
+  }
+
+  .title {
+    margin-bottom: 1rem;
+  }
+
+  .sub-title {
+    margin-bottom: 70px;
+    font-size: 1.62rem;
+    color: $darkNavy;
+  }
+
+  .showroom-content-wrap {
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 70px;
+    box-shadow: 4px 4px 40px #00000010;
+    background-color: #fff;
+    border-radius: 20px;
+
+    .showroom-content-left {
+      width: 40%;
+      height: 500px;
+      background-image: url(../images/08.showroom/showroom01.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 20px;
+      transition: background .3s;
+    }
+
+    .showroom-content-right {
+      width: 50%;
+
+      .showroom-right-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 1.5rem;
+
+        h4 {
+          font-size: 2.25rem;
+          color: $navy2;
+          font-weight: 700;
+        }
+
+        span {
+          font-size: 1.25rem;
+
+          strong {
+            font-weight: 900;
+            color: $navy2;
+          }
+        }
+      }
+
+      .showroom-list {
+        height: 435px;
+        overflow-y: scroll;
+        padding: 0 3rem;
+        box-sizing: border-box;
+        background-color: #FAFAFA;
+
+        &::-webkit-scrollbar {
+          width: 12px;
+
+          &-thumb {
+            background-color: #B5B6B8;
+            border-radius: 50px;
+          }
+
+          &-track {
+            background-color: #ECECEC;
+          }
+        }
+
+        li {
+          border-bottom: 1px solid rgba($darkNavy, 20%);
+          padding-top: 1.2rem;
+          position: relative;
+
+          &:hover {
+            background-color: $font3;
+          }
+
+          a {
+            display: block;
+            color: $navy2;
+
+            h5 {
+              font-size: 1.63rem;
+              margin-bottom: 1rem;
+              font-weight: 700;
+            }
+
+            p {
+              width: 75%;
+              font-size: 1.4rem;
+              margin-bottom: 0.5rem;
+            }
+
+            span {
+              display: block;
+              font-size: 1.1rem;
+              color: $navy5;
+              margin-bottom: 1rem;
+            }
+
+            .heart-icon {
+              width: 26px;
+              height: 24px;
+              background: url(../images/08.showroom/showroom-icon-heart.png) no-repeat;
+              position: absolute;
+              right: 0;
+              top: 1.5rem;
+
+              &.on {
+                background-position: -26px 0;
+              }
+            }
+
+            button {
+              width: 100px;
+              height: 36px;
+              background-color: #42db85;
+              color: #fff;
+              border: none;
+              border-radius: 50px;
+              position: absolute;
+              right: 0;
+              bottom: 1rem;
+
+              &:hover {
+                background-color: #31a061;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .more-btn {
+    width: 200px;
+    margin: auto;
+    margin-top: 60px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .arrow {
+      transition: transform .3s;
+    }
+
+    &:hover {
+      .arrow {
+        transform: translateX(30px);
+      }
+    }
+
+    span {
+      font-family: $font-title;
+      font-size: 1.63rem;
+      color: $navy2;
+    }
+
+  }
+}

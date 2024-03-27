@@ -1,0 +1,228 @@
+@import "variables";
+
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  .header-inner {
+    .logo {
+      z-index: 10;
+    }
+    .gnb {
+      a {
+        color: #1c2844;
+        font-weight: 500;
+      }
+    }
+    .login {
+      a {
+        svg {
+          path {
+            stroke: $darkNavy;
+          }
+        }
+      }
+    }
+  }
+}
+
+.loginPage{
+  height: 90vh;
+  padding-top: 200px;
+
+  .login-inner{
+    width: 436px;
+    margin: auto;
+    text-align: center;
+
+    .subPage-title{
+      font-size: 42px;
+      font-weight: bold;
+      font-family: $font-title;
+      color: $darkNavy;
+      margin-bottom: 57px;
+    }
+
+    .login-box{
+      input{
+        width: 100%;
+        height: 65px;
+        padding-left: 1rem;
+        font-size: 20px;
+        border: 1px solid $font2;
+        border-radius: 10px;
+        outline: none;
+        box-sizing: border-box;
+
+        &::placeholder{
+          font-weight: 300;
+          color: $font1;
+        }
+
+        &:focus::placeholder{
+          color:transparent;
+      }
+      }
+
+      input[type="text"]{
+        margin-bottom: 11px;
+      }
+
+      .keep-login-box{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 13px 0 24px;
+        font-size: 18px;
+        color: $navy3;
+        cursor: pointer;
+
+        &>input[type="checkbox"]{
+          display: none;
+        }
+
+        .check-custom{
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border-radius: 5px;
+          border: 1px solid $font1;
+          overflow: hidden;
+
+          &::before{
+            content:'';
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+        }
+
+        &>input[type="checkbox"]:checked + .check-custom{
+          background: $font3;
+        }
+
+        &>input[type="checkbox"]:checked + .check-custom::before{
+          background: url(../images/15.login/check.svg) no-repeat center center;
+          background-size: cover;
+        }
+        
+      }
+
+      button{
+        width: 100%;
+        height: 65px;
+        font-size: 20px;
+        color: $font5;
+        background: $darkNavy;
+        border-radius: 10px;
+        border: none;
+
+        &:hover{
+          background: #111;
+        }
+      }
+    }
+
+    .find-info{
+      margin: 30px 0 80px;
+
+      a{
+        padding: 0 1rem;
+        font-size: 18px;
+        color: $navy3;
+        cursor: pointer;
+        border-right: 1px solid $navy2;
+
+        &:hover{
+          text-decoration: underline;
+        }
+
+        &:last-child{
+          border-right: 0;
+        }
+      }
+    }
+
+    .sns-login{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h6{
+        font-size: 18px;
+        color: $font1;
+      }
+
+      .sns-icon{
+        cursor: pointer;
+        &>:nth-child(2){
+          margin-left: 3px;
+        }
+      }
+    }
+
+    .join-membership{
+      height: 58px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      padding: 0 2rem;
+      font-size: 18px;
+      font-weight: 500;
+      border: 1px solid $navy5;
+      border-radius: 10px;
+
+      p{
+        color: $navy4;
+      }
+
+      h4{
+        a{
+          font-weight: 600;
+          color: $darkNavy;
+
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {height: 300px}
+
+// 반응형
+
+@media screen and (max-width:430px){
+  .loginPage{
+    padding-top: 150px;
+  .login-inner{
+    width: 90%;
+
+    .find-info{
+      margin: 30px 0 60px;
+      a{
+        padding: 0 0.6rem;
+      }
+    }
+    
+    .sns-login {
+      flex-direction: column-reverse;
+      gap: 1.2rem;
+
+      .sns-icon{
+        &>:nth-child(2) {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .join-membership{
+      margin-top: 35px;
+    }
+
+  }
+}
+}
+

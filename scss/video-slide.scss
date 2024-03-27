@@ -1,0 +1,207 @@
+@import "reset", "variables";
+
+.video-slide {
+  height: 1000px;
+  text-align: center;
+
+  /* 스크롤시 나타남 */
+  &.fade {
+    .title {
+      opacity: 1;
+      transform: translate(0);
+      will-change: auto;
+    }
+
+    .video-contents {
+      .video-slide-left {
+        .video-slide-list {
+          opacity: 1;
+          transform: translate(0);
+          will-change: auto;
+        }
+      }
+
+      .video-slide-middle {
+        opacity: 1;
+        will-change: auto;
+      }
+
+      .video-slide-right {
+        opacity: 1;
+        transform: translate(0);
+        will-change: auto;
+      }
+    }
+  }
+
+  >.title {
+    margin: 170px 0 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .5s;
+    transition-property: transform, opacity;
+    will-change: transform, opacity;
+  }
+
+  .video-contents {
+    width: 100%;
+    height: 685px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    align-items: center;
+    margin-top: 40px;
+
+    .video-slide-left {
+      margin: auto;
+
+      .video-slide-list {
+        transition: .5s;
+        transition-delay: .2s;
+        transform: translateX(-100px);
+        opacity: 0;
+        transition-property: transform, opacity;
+        will-change: transform, opacity;
+
+        li {
+          width: 100px;
+          font-size: 1rem;
+          font-weight: 200;
+          line-height: 2rem;
+          text-align: left;
+          color: $font1;
+          cursor: pointer;
+          transition: 0.5s;
+        }
+
+        li.clickList {
+          font-size: 1.375rem;
+          font-weight: 400;
+          color: $darkNavy;
+        }
+      }
+    }
+
+    .video-slide-middle {
+      opacity: 0;
+      transition: .5s;
+      transition-delay: .4s;
+      position: relative;
+      transition-property: opacity;
+      will-change: opacity;
+
+      .video-container {
+        position: relative;
+        max-width: 579px;
+        height: 685px;
+        margin: auto;
+
+        .video-wrap {
+          width: 100%;
+          height: 100%;
+          margin: auto;
+          overflow: hidden;
+          position: relative;
+
+          .videos {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            position: absolute;
+            left: 0;
+
+            img {
+              width: 100%;
+              height: inherit;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+
+        .video-wrap-line {
+          width: 100%;
+          height: 100%;
+          border: 2px solid $navy3;
+          position: absolute;
+          top: 50px;
+          left: 50px;
+          z-index: -10;
+          transition: .5s;
+          box-sizing: border-box;
+        }
+
+        .video-wrap-line.move {
+          top: 0px;
+          left: 0px;
+        }
+      }
+    }
+
+    .video-slide-right {
+      height: 685px;
+      transition: .5s;
+      transition-delay: .6s;
+      transform: translateY(50px);
+      opacity: 0;
+      transition-property: transform, opacity;
+      will-change: transform, opacity;
+
+      .video-slide-desc-wrap {
+        width: 100%;
+        height: inherit;
+        position: relative;
+
+        .video-slide-desc {
+          width: 70%;
+          height: auto;
+          text-align: left;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+          visibility: hidden;
+
+          &.viewDesc {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          &.animationDesc {
+            animation-name: descAni;
+            animation-duration: 1.5s;
+          }
+
+          @keyframes descAni {
+            0% {
+              opacity: 0;
+              top: 60%;
+            }
+
+            100% {
+              opacity: 1;
+              top: 50%;
+            }
+          }
+
+          h3 {
+            font-size: 2.125rem;
+            font-weight: 500;
+            line-height: 2.8rem;
+            color: $darkNavy;
+            margin-bottom: 1rem;
+          }
+
+          p {
+            width: 85%;
+            font-size: 1.125rem;
+            font-weight: 300;
+            text-align: justify;
+            line-height: 1.8rem;
+            color: $navy3;
+          }
+        }
+      }
+    }
+  }
+}

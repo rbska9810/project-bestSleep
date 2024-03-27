@@ -1,0 +1,231 @@
+/* ===========reset=========== */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/* font */
+/* font */
+/* main-color */
+/* gray-scale */
+/* navy-color */
+/* series */
+.series {
+  height: 1355px;
+  padding: 165px 100px 60px;
+  box-sizing: border-box;
+}
+.series.fade .series-items .swiper-wrapper .swiper-slide {
+  opacity: 1;
+  transform: translate(0);
+}
+.series .star-icon {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.series .title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.series .sub-title {
+  font-size: 1.62rem;
+  text-align: center;
+  margin-bottom: 70px;
+  color: #1c2844;
+}
+.series .series-items .swiper-wrapper .swiper-slide {
+  opacity: 0;
+  transform: translateY(100px);
+  height: 860px;
+  background-repeat: no-repeat;
+  background-position: 70px 450px;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 50px 50px 0 0;
+}
+.series .series-items .swiper-wrapper .swiper-slide.on {
+  background-position: 600px 450px;
+  transition-delay: 0s;
+}
+.series .series-items .swiper-wrapper .swiper-slide.overtext h4 {
+  transform: rotate(90deg) translateX(30px);
+}
+.series .series-items .swiper-wrapper .swiper-slide.overtext h4.title-sm {
+  transform: rotate(90deg) translateX(40px);
+}
+.series .series-items .swiper-wrapper .swiper-slide.overtext h4::after {
+  background-color: transparent;
+}
+.series .series-items .swiper-wrapper .swiper-slide.contentView .series-item-size-wrap {
+  opacity: 1;
+}
+.series .series-items .swiper-wrapper .swiper-slide.contentView h4 {
+  width: 300px;
+  transform: translateX(-350px);
+}
+.series .series-items .swiper-wrapper .swiper-slide.contentView h4::after {
+  width: 70%;
+}
+.series .series-items .swiper-wrapper .swiper-slide .left-star-icon {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -22px;
+}
+.series .series-items .swiper-wrapper .swiper-slide h4 {
+  font-family: "Kaisei Tokumin", serif;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 1.75rem;
+  position: relative;
+  padding: 120px 0 30px;
+  transition: transform 0.5s;
+  font-weight: bold;
+}
+.series .series-items .swiper-wrapper .swiper-slide h4::after {
+  content: "";
+  width: 37px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.5s;
+}
+.series .series-items .swiper-wrapper .swiper-slide .series-item-size-wrap {
+  width: 400px;
+  opacity: 0;
+  transition: all 0.5s;
+  overflow: hidden;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.series .series-items .swiper-wrapper .swiper-slide .series-item-size-wrap p {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.series .series-items .swiper-wrapper .swiper-slide .series-item-size-wrap p svg {
+  transform: rotate(45deg);
+  display: inline-block;
+  margin-right: 1rem;
+}
+.series .series-items .swiper-wrapper .series-item01 {
+  background-image: url(../images/05.series/series01.png);
+  background-color: #f6f6f6;
+}
+.series .series-items .swiper-wrapper .series-item01 h4,
+.series .series-items .swiper-wrapper .series-item01 p {
+  color: #b8b2b2;
+}
+.series .series-items .swiper-wrapper .series-item01 h4::after {
+  background-color: #b8b2b2;
+}
+.series .series-items .swiper-wrapper .series-item02 {
+  background-image: url(../images/05.series/series02.png);
+  background-color: #eceae5;
+  transition-delay: 0.2s;
+}
+.series .series-items .swiper-wrapper .series-item02 .left-star-icon {
+  top: 50%;
+}
+.series .series-items .swiper-wrapper .series-item02 h4,
+.series .series-items .swiper-wrapper .series-item02 p {
+  color: #B8AE94;
+}
+.series .series-items .swiper-wrapper .series-item02 h4::after {
+  background-color: #B8AE94;
+}
+.series .series-items .swiper-wrapper .series-item03 {
+  background-image: url(../images/05.series/series03.png);
+  background-color: #d8d4c9;
+  transition-delay: 0.4s;
+}
+.series .series-items .swiper-wrapper .series-item03 .left-star-icon {
+  top: 10%;
+}
+.series .series-items .swiper-wrapper .series-item03 h4,
+.series .series-items .swiper-wrapper .series-item03 p {
+  color: #A79D82;
+}
+.series .series-items .swiper-wrapper .series-item03 h4::after {
+  background-color: #A79D82;
+}
+.series .series-items .swiper-wrapper .series-item04 {
+  background-image: url(../images/05.series/series04.png);
+  background-color: #a99b82;
+  transition-delay: 0.6s;
+}
+.series .series-items .swiper-wrapper .series-item04 .left-star-icon {
+  top: 40%;
+}
+.series .series-items .swiper-wrapper .series-item04 h4,
+.series .series-items .swiper-wrapper .series-item04 p {
+  color: #E4DED2;
+}
+.series .series-items .swiper-wrapper .series-item04 h4::after {
+  background-color: #E4DED2;
+}
+.series .series-items .swiper-wrapper .series-item05 {
+  background-image: url(../images/05.series/series05.png);
+  background-color: #5b6354;
+  transition-delay: 0.8s;
+}
+.series .series-items .swiper-wrapper .series-item05 .left-star-icon {
+  top: 60%;
+}
+.series .series-items .swiper-wrapper .series-item05 h4,
+.series .series-items .swiper-wrapper .series-item05 p {
+  color: #ECF4E5;
+}
+.series .series-items .swiper-wrapper .series-item05 h4::after {
+  background-color: #ECF4E5;
+}

@@ -1,0 +1,109 @@
+/* ===========reset=========== */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/* font */
+/* font */
+/* main-color */
+/* gray-scale */
+/* navy-color */
+.quickmenu {
+  width: 63px;
+  height: 219px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 90;
+  transition: 1.2s;
+}
+.quickmenu.scroll {
+  top: 70%;
+  transform: translateY(0);
+}
+.quickmenu .quickbtn {
+  width: 63px;
+  height: 63px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #818ba1;
+  background: #ffffff;
+  box-shadow: 2px 2px 20px rgba(84, 94, 120, 0.05);
+  transition: 0.3s;
+}
+.quickmenu .quickbtn a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.781rem;
+  font-weight: 700;
+  color: #4c566c;
+  padding-top: 10px;
+}
+.quickmenu .quickbtn:nth-child(2) a {
+  padding-top: 12px;
+}
+.quickmenu .quickbtn:nth-child(3) a {
+  gap: 4px;
+  padding-top: 17px;
+  transition: 0.3s;
+}
+.quickmenu .quickbtn:hover {
+  border: 1px solid #FF8B2E;
+  box-shadow: 2px 2px 20px rgba(255, 139, 46, 0.2);
+}
+.quickmenu .quickbtn:hover a {
+  color: #FF8B2E;
+}
+.quickmenu .quickbtn:hover a img {
+  filter: invert(58%) sepia(65%) saturate(652%) hue-rotate(336deg) brightness(100%) contrast(102%);
+}

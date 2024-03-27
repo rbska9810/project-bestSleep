@@ -1,0 +1,297 @@
+/* ===========reset=========== */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/* font */
+/* font */
+/* main-color */
+/* gray-scale */
+/* navy-color */
+.commend {
+  height: 1120px;
+  background-color: #f9f9f9;
+  padding-top: 200px;
+}
+.commend.fade .commend-box {
+  opacity: 1;
+  transform: translate(0);
+  will-change: auto;
+}
+.commend .title {
+  text-align: center;
+}
+.commend .star-icon {
+  text-align: center;
+  margin: 40px 0;
+}
+.commend .commend-box {
+  height: 590px;
+  background-color: white;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 55px 100px;
+  position: relative;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(50px);
+  transition-property: transform, opacity;
+  will-change: transform, opacity;
+}
+.commend .commend-box .result-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #FF8B2E;
+  box-shadow: 4px 4px 40px rgba(255, 139, 46, 0.15);
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+  background-color: white;
+  display: none;
+}
+.commend .commend-box .result-box .result-close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+.commend .commend-box .result-box .result-content {
+  padding-top: 200px;
+}
+.commend .commend-box .result-box .result-content .result-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commend .commend-box .result-box .result-content .result-top h4 {
+  margin: 0 1rem;
+  color: #1c2844;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.commend .commend-box .result-box .result-content .result-top img {
+  transform: rotate(45deg);
+}
+.commend .commend-box .result-box .result-content .result-bottom {
+  padding: 60px 80px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.commend .commend-box .result-box .result-content .result-bottom > h5 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #70788c;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  display: none;
+}
+.commend .commend-box .result-box .result-content .result-bottom .result-item {
+  width: 30%;
+  height: 170px;
+  border: 1px solid;
+  border-image: linear-gradient(0deg, #EA8249 0%, #939DBB 100%);
+  border-image-slice: 1;
+  text-align: center;
+  border-radius: 20px;
+  color: #1c2844;
+}
+.commend .commend-box .result-box .result-content .result-bottom .result-item h5 {
+  font-size: 1.625rem;
+  margin: 35px 0;
+  font-weight: 600;
+}
+.commend .commend-box .result-box .result-content .result-bottom .result-item .result-item-content {
+  display: flex;
+  justify-content: space-around;
+}
+.commend .commend-box .result-box .result-content .result-bottom .result-item .result-item-content a {
+  font-size: 1.25rem;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 10PX;
+}
+.commend .commend-box .result-box .result-content .result-bottom .result-item .result-item-content a:nth-child(1) {
+  border-color: #4A556E;
+  color: #4A556E;
+}
+.commend .commend-box .result-box .result-content .result-bottom .result-item .result-item-content a:nth-child(2) {
+  border-color: #5F729F;
+  color: #5F729F;
+}
+.commend .commend-box .result-box .result-content .result-bottom .result-item .result-item-content a:nth-child(3) {
+  border-color: #A9B4CC;
+  color: #A9B4CC;
+}
+.commend .commend-box form {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.commend .commend-box .commend-left {
+  width: 48%;
+  max-width: 550px;
+  height: 410px;
+}
+.commend .commend-box .commend-left h3 {
+  font-size: 2.625rem;
+  font-weight: 600;
+  color: #1c2844;
+  margin-bottom: 70px;
+}
+.commend .commend-box .commend-left h3 span {
+  color: #FF8B2E;
+  font-weight: 600;
+}
+.commend .commend-box .commend-left p {
+  color: #4c566c;
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 3;
+}
+.commend .commend-box .commend-left p select {
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 139, 46, 0.3);
+  text-align: center;
+  font-size: 1.625rem;
+  color: #1c2844;
+  font-weight: 600;
+  outline: none;
+  appearance: none;
+  background: url(../images/09.commend/arrow.svg) no-repeat right 2px center;
+}
+.commend .commend-box .commend-left p select#mettress-or {
+  width: 80%;
+}
+.commend .commend-box .commend-left p select#spring-or {
+  width: 35%;
+}
+.commend .commend-box .commend-left p select#hard-or {
+  width: 39%;
+}
+.commend .commend-box .commend-left p select#price-or {
+  width: 39%;
+}
+.commend .commend-box .commend-right {
+  width: 48%;
+  max-width: 600px;
+  height: 425px;
+  border: 1px solid #FF8B2E;
+  padding: 50px 55px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 4px 4px 20px rgba(255, 139, 46, 0.15);
+}
+.commend .commend-box .commend-right p {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: 1.625rem;
+}
+.commend .commend-box .commend-right p:nth-child(4) {
+  border-bottom: 1px dotted #818ba1;
+  padding-bottom: 1.5rem;
+  margin-bottom: 35px;
+}
+.commend .commend-box .commend-right p strong {
+  font-weight: 600;
+  color: #1c2844;
+}
+.commend .commend-box .commend-right p span {
+  color: #70788c;
+}
+.commend .commend-box .commend-right div {
+  display: flex;
+  justify-content: space-between;
+}
+.commend .commend-box .commend-right div .commend-btn {
+  width: 45%;
+  height: 65px;
+  background-color: transparent;
+  color: #70788c;
+  border-radius: 20px;
+  border: 1px solid #70788c;
+  font-size: 1.75rem;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+.commend .commend-box .commend-right div .commend-btn:hover {
+  background-color: #FF8B2E;
+  color: white;
+  border: none;
+}
+.commend .commend-box .commend-right div .commend-btn.on {
+  background-color: #FF8B2E;
+  color: white;
+  border: none;
+}
+.commend .commend-box .commend-right div .reset-btn {
+  width: 45%;
+  height: 65px;
+  border-radius: 20px;
+  border: 1px solid #70788c;
+  color: #70788c;
+  font-size: 1.75rem;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.commend .commend-box .commend-right div .reset-btn:hover {
+  background-color: #FF8B2E;
+  color: white;
+  border: none;
+}
+.commend .commend-box .commend-right div .reset-btn.on {
+  background-color: #FF8B2E;
+  color: white;
+  border: none;
+}

@@ -1,0 +1,263 @@
+@import "reset", "variables";
+
+.mattress-master {
+  height: 790px;
+  background: $font4;
+  position: relative;
+  padding: 1px;
+
+  &.fade {
+    .master-left-content {
+
+      .title,
+      .master-content,
+      .master-btn-img-boxs {
+        opacity: 1;
+        transform: translate(0);
+        will-change: auto;
+      }
+    }
+
+    .master-right-content {
+      opacity: 1;
+      transform: translate(0);
+      will-change: auto;
+    }
+  }
+
+  .master-left-content {
+
+    .title,
+    .master-content,
+    .master-btn-img-boxs {
+      transition: .5s;
+      opacity: 0;
+      transform: translateY(50px);
+      transition-property: transform, opacity;
+      will-change: transform, opacity;
+    }
+
+    .title {
+      &:first-child {
+        margin-top: 200px;
+      }
+
+      &:nth-child(2) {
+        margin-top: 10px;
+      }
+    }
+
+    .master-content {
+      transition-delay: .3s;
+      font-family: $nomal-font;
+      font-weight: 300;
+      font-size: 1.25rem;
+      line-height: 30px;
+      color: $navy2;
+      margin-top: 30px;
+
+      span {
+        display: block;
+      }
+    }
+
+    .master-btn-img-boxs {
+      transition-delay: .6s;
+      margin-top: 70px;
+      display: flex;
+      gap: 10px;
+      cursor: pointer;
+
+      .master-btn-img-box {
+        width: 130px;
+        height: 74px;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: inherit;
+          border-radius: 5px;
+          transition: .3s;
+        }
+
+        &:hover img {
+          transform: scale(0.95);
+        }
+
+        &:hover::after {
+          content: 'click me';
+          width: 100%;
+          height: 100%;
+          color: $darkNavy;
+          font-family: $font-title;
+          text-align: center;
+          line-height: 74px;
+          position: absolute;
+          left: 0;
+          border-radius: 5px;
+          background: rgba(255, 255, 255, 0.6);
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+
+  .master-right-content {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: .5s;
+    transition-delay: .8s;
+    position: absolute;
+    right: 160px;
+    top: 260px;
+    box-sizing: border-box;
+    transition-property: transform, opacity;
+    will-change: transform, opacity;
+
+    .master-mettress-wrap {
+      .master-mettress-btn {
+
+        img {
+          position: absolute;
+          z-index: 50;
+          transition: .5s;
+          cursor: pointer;
+
+          &:nth-child(1) {
+            top: 15px;
+            right: 90px;
+          }
+
+          &:nth-child(2) {
+            top: 25px;
+            right: 300px;
+          }
+
+          &:nth-child(3) {
+            top: 95px;
+            right: 220px;
+          }
+
+          &:nth-child(4) {
+            top: 100px;
+            left: 130px;
+          }
+
+          &:nth-child(5) {
+            top: 200px;
+            left: 180px;
+          }
+
+          &:hover {
+            mix-blend-mode: screen;
+            transform: scale(0.9) rotate(45deg);
+          }
+        }
+      }
+
+      .master-mettress {
+        img {
+          width: 600px;
+          height: auto;
+          position: relative;
+        }
+
+        &::before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          display: block;
+          background: url(../images/04.mattress-master/mattress-master-bg.png) no-repeat;
+          position: absolute;
+          bottom: 80px;
+          left: 60px;
+        }
+      }
+    }
+  }
+
+  .master-modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    background-color: rgba(#333, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    &.modal-vew {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-card {
+      width: 456px;
+      height: 665px;
+      background: white;
+      border-radius: 40px;
+      text-align: center;
+      box-shadow: 4px 4px 30px rgba(#333, 0.3);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s;
+
+      &.card-veiw {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .card-img {
+        height: 260px;
+        overflow: hidden;
+
+        img {
+          transition: 1s;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      .close-btn {
+        width: 41px;
+        height: 41px;
+        margin: 25px 0 15px 380px;
+        cursor: pointer;
+      }
+
+      .card-desc {
+        h3 {
+          font-family: $font-title;
+          color: $darkNavy;
+          font-weight: 600;
+          font-size: 2.25rem;
+          margin: 24px 0 15px;
+        }
+
+        h4 {
+          font-size: 1.375rem;
+          color: $navy3;
+          margin-bottom: 24px;
+        }
+
+        p {
+          text-align: justify;
+          padding: 0 2.5rem;
+          color: $navy5;
+          font-size: 0.875rem;
+          font-weight: 300;
+          line-height: 1.3rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+/* font */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap");
+/* font */
+/* main-color */
+/* gray-scale */
+/* navy-color */
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.header .header-inner .logo {
+  z-index: 10;
+}
+.header .header-inner .gnb a {
+  color: #1c2844;
+  font-weight: 500;
+}
+.header .header-inner .login a svg path {
+  stroke: #1c2844;
+}
+
+.loginPage {
+  height: 90vh;
+  padding-top: 200px;
+}
+.loginPage .login-inner {
+  width: 436px;
+  margin: auto;
+  text-align: center;
+}
+.loginPage .login-inner .subPage-title {
+  font-size: 42px;
+  font-weight: bold;
+  font-family: "Kaisei Tokumin", serif;
+  color: #1c2844;
+  margin-bottom: 57px;
+}
+.loginPage .login-inner .login-box input {
+  width: 100%;
+  height: 65px;
+  padding-left: 1rem;
+  font-size: 20px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+.loginPage .login-inner .login-box input::placeholder {
+  font-weight: 300;
+  color: #adaeb1;
+}
+.loginPage .login-inner .login-box input:focus::placeholder {
+  color: transparent;
+}
+.loginPage .login-inner .login-box input[type=text] {
+  margin-bottom: 11px;
+}
+.loginPage .login-inner .login-box .keep-login-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 13px 0 24px;
+  font-size: 18px;
+  color: #545e78;
+  cursor: pointer;
+}
+.loginPage .login-inner .login-box .keep-login-box > input[type=checkbox] {
+  display: none;
+}
+.loginPage .login-inner .login-box .keep-login-box .check-custom {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #adaeb1;
+  overflow: hidden;
+}
+.loginPage .login-inner .login-box .keep-login-box .check-custom::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.loginPage .login-inner .login-box .keep-login-box > input[type=checkbox]:checked + .check-custom {
+  background: #f2f1ef;
+}
+.loginPage .login-inner .login-box .keep-login-box > input[type=checkbox]:checked + .check-custom::before {
+  background: url(../images/15.login/check.svg) no-repeat center center;
+  background-size: cover;
+}
+.loginPage .login-inner .login-box button {
+  width: 100%;
+  height: 65px;
+  font-size: 20px;
+  color: #ffffff;
+  background: #1c2844;
+  border-radius: 10px;
+  border: none;
+}
+.loginPage .login-inner .login-box button:hover {
+  background: #111;
+}
+.loginPage .login-inner .find-info {
+  margin: 30px 0 80px;
+}
+.loginPage .login-inner .find-info a {
+  padding: 0 1rem;
+  font-size: 18px;
+  color: #545e78;
+  cursor: pointer;
+  border-right: 1px solid #4c566c;
+}
+.loginPage .login-inner .find-info a:hover {
+  text-decoration: underline;
+}
+.loginPage .login-inner .find-info a:last-child {
+  border-right: 0;
+}
+.loginPage .login-inner .sns-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.loginPage .login-inner .sns-login h6 {
+  font-size: 18px;
+  color: #adaeb1;
+}
+.loginPage .login-inner .sns-login .sns-icon {
+  cursor: pointer;
+}
+.loginPage .login-inner .sns-login .sns-icon > :nth-child(2) {
+  margin-left: 3px;
+}
+.loginPage .login-inner .join-membership {
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 2rem;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #818ba1;
+  border-radius: 10px;
+}
+.loginPage .login-inner .join-membership p {
+  color: #70788c;
+}
+.loginPage .login-inner .join-membership h4 a {
+  font-weight: 600;
+  color: #1c2844;
+}
+.loginPage .login-inner .join-membership h4 a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  height: 300px;
+}
+
+@media screen and (max-width: 430px) {
+  .loginPage {
+    padding-top: 150px;
+  }
+  .loginPage .login-inner {
+    width: 90%;
+  }
+  .loginPage .login-inner .find-info {
+    margin: 30px 0 60px;
+  }
+  .loginPage .login-inner .find-info a {
+    padding: 0 0.6rem;
+  }
+  .loginPage .login-inner .sns-login {
+    flex-direction: column-reverse;
+    gap: 1.2rem;
+  }
+  .loginPage .login-inner .sns-login .sns-icon > :nth-child(2) {
+    margin-left: 8px;
+  }
+  .loginPage .login-inner .join-membership {
+    margin-top: 35px;
+  }
+}

@@ -1,0 +1,380 @@
+@import "reset", "variables";
+
+
+.modal {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 13rem;
+  z-index: 90;
+
+  .modal-wrap {
+    width: 446px;
+    height: 650px;
+
+    .modal-close-btn {
+      position: absolute;
+      bottom: 101%;
+      right: 0;
+      cursor: pointer;
+    }
+
+    .tab-contents {
+      width: 100%;
+      height: 508px;
+      overflow: hidden;
+      background: #F2F2F2;
+      box-sizing: border-box;
+      position: relative;
+
+      #tabmenu1 {
+        height: inherit;
+        background: url(../images/11.modal-quickMenu/modal01-bg.png) no-repeat;
+        background-position: right -15px top -10px;
+
+        >img:nth-child(1) {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+
+        >h2:nth-child(2) {
+          width: 66%;
+          font-size: 3rem;
+          font-weight: 800;
+          line-height: 3.6rem;
+          position: absolute;
+          margin: 45px 0 0 30px;
+        }
+
+        >img:nth-child(3) {
+          position: absolute;
+          top: 115px;
+          right: 15px;
+          z-index: 60;
+        }
+
+        .point-title {
+          width: 245px;
+          height: 75px;
+          font-size: 1.625rem;
+          font-weight: 800;
+          text-align: center;
+          line-height: 75px;
+          padding-left: 1.2rem;
+          border-radius: 56px 0 0 56px;
+          background: #82E90A;
+          position: absolute;
+          top: 250px;
+          right: 0;
+          box-sizing: border-box;
+        }
+
+        >img:nth-child(5) {
+          position: absolute;
+          bottom: 130px;
+          left: -40px;
+        }
+
+        .event-desc {
+          position: absolute;
+          bottom: 18px;
+          right: 20px;
+          text-align: right;
+
+          // line-height: 2.7rem;
+          h3 {
+            font-size: 1.875rem;
+          }
+
+          >span {
+            transform: translateY(-5px);
+          }
+
+          >span:nth-child(2) {
+            display: inline-block;
+            width: 71%;
+            height: 2px;
+            background: #000;
+          }
+
+          >span:nth-child(4) {
+            display: inline-block;
+            width: 95%;
+            height: 2px;
+            background: #000;
+          }
+
+          >span:nth-child(6) {
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            background: #000;
+          }
+        }
+
+        h4 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          transform: rotate(90deg);
+          position: absolute;
+          bottom: 70px;
+          left: -32px;
+        }
+      }
+
+      #tabmenu2 {
+        >img {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+
+        .product-content1 {
+          text-align: center;
+
+          >.product-img {
+            width: 65%;
+            height: 200px;
+            margin: 65px auto 0;
+            position: relative;
+
+            img:nth-child(1) {
+              position: absolute;
+              left: -10px;
+            }
+
+            img:nth-child(2) {
+              position: absolute;
+              top: 120px;
+              left: 50%;
+              z-index: 50;
+            }
+
+            .plusGoods {
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              border: 2px solid $orange;
+              overflow: hidden;
+              background: url(../images/11.modal-quickMenu/modal03.png) no-repeat;
+              background-position: -50px -40px;
+              position: absolute;
+              top: 90px;
+              right: 5px;
+              z-index: 40;
+            }
+          }
+
+          .product-desc1 {
+            margin-top: 26px;
+
+            h2 {
+              font-size: 1.875rem;
+              font-weight: 800;
+              line-height: 2.3rem;
+            }
+
+            .plus-product {
+              width: 230px;
+              height: 50px;
+              background: $orange;
+              font-size: 1.438rem;
+              font-weight: 800;
+              line-height: 50px;
+              margin: 20px auto 0;
+              transform: rotate(2deg);
+            }
+
+            .total-price1 {
+              width: 174px;
+              height: 28px;
+              font-size: 1.25rem;
+              font-weight: 700;
+              line-height: 28px;
+              background: #000;
+              color: $orange;
+              position: relative;
+              transform: rotate(-5deg);
+              margin: auto;
+              z-index: 20;
+            }
+
+
+          }
+        }
+      }
+
+      #tabmenu3 {
+        >img {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+
+        .product-content2 {
+          text-align: center;
+
+          >.product-img {
+            width: 60%;
+            height: 180px;
+            margin: 105px auto 0;
+            position: relative;
+            right: 10px;
+            display: flex;
+            align-items: center;
+
+            img:nth-child(2) {
+              transform: translateX(-15px);
+            }
+          }
+
+          .product-desc2 {
+            margin-top: 26px;
+
+            h2 {
+              font-size: 1.875rem;
+              font-weight: 800;
+              line-height: 2.3rem;
+            }
+
+            .total-price2 {
+              width: 184px;
+              height: 60px;
+              font-size: 1.375rem;
+              font-weight: 800;
+              line-height: 55px;
+              margin: 20px auto 0;
+              background: url(../images/11.modal-quickMenu/modal05-1.png) no-repeat;
+            }
+          }
+        }
+      }
+
+      #tabmenu4 {
+        >img {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+
+        .product-content3 {
+          text-align: center;
+
+          >.product-img {
+            margin-top: 75px;
+          }
+
+          .product-desc3 {
+            margin-top: 20px;
+
+            h2 {
+              font-size: 1.875rem;
+              font-weight: 800;
+              line-height: 2.3rem;
+
+              >span {
+                font-weight: 800;
+                color: $orange;
+              }
+            }
+
+            .total-price3 {
+              width: 201px;
+              height: 74px;
+              font-size: 1.313rem;
+              font-weight: 800;
+              line-height: 1.5rem;
+              padding-top: 14px;
+              margin: 20px auto 5px;
+              background: url(../images/11.modal-quickMenu/modal07-1.png) no-repeat;
+            }
+
+            p {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+
+    .tab-menu {
+      width: 100%;
+      height: calc(100% - 508px);
+      background: rgb(230, 230, 230);
+
+      .event-title {
+        width: 100%;
+        height: 68.5px;
+        line-height: 68.5px;
+        text-align: center;
+        overflow: hidden;
+
+        .tabmenu1-btn1 {
+          display: block;
+          font-size: 1.25rem;
+          font-weight: 500;
+          color: #82E90A;
+          background: #000;
+
+          &:hover {
+            color: $orange;
+          }
+        }
+
+        .tabmenu1-btn2 {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: #000;
+          background: #D9D9D9;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 7px;
+
+          &:hover {
+            color: $orange;
+
+            img {
+              filter: invert(58%) sepia(65%) saturate(652%) hue-rotate(336deg) brightness(100%) contrast(102%);
+            }
+          }
+        }
+      }
+
+      .event-products {
+        height: 73.5px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .event-product {
+          height: inherit;
+          color: #000;
+          background: #EEEEF0;
+
+          a {
+            height: inherit;
+            display: block;
+            text-align: center;
+            padding-top: 14px;
+            box-sizing: border-box;
+            font-size: 1.125rem;
+            font-weight: 800;
+            line-height: 1.2rem;
+            color: #000;
+
+            &.tabClick {
+              color: #82E90A;
+              background: #000;
+            }
+
+            span {
+              font-size: 0.875rem;
+              color: #929292;
+            }
+          }
+        }
+      }
+    }
+  }
+}

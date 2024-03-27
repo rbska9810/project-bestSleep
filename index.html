@@ -1,0 +1,2019 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/bestsleep.ico">
+  <title>best sleep</title>
+  <!-- style -->
+  <link rel="stylesheet" href="css/all.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--map-->
+  <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=qy78fu7d6x"></script>
+</head>
+
+<body>
+  <!-- header 희주 -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="images/01.header/header-logo.svg" alt="로고" />
+        </a>
+      </div>
+      <ul class="gnb">
+        <li><a href="#none">수면과학</a></li>
+        <li>
+          <a href="HTML/sub-page01.html">침대
+            <img src="images/mouse-click-svgrepo-com.svg" alt="img">
+          </a>
+          <div class="sub-menu">
+            <a href="HTML/sub-page01.html">인기순위</a>
+            <a href="HTML/sub-page01.html">매트리스</a>
+            <a href="HTML/sub-page01.html">침대프레임</a>
+          </div>
+        </li>
+        <li><a href="#none">미디어</a></li>
+        <li><a href="HTML/sub-page02.html">쇼룸안내
+          <img src="images/mouse-click-svgrepo-com.svg" alt="img">
+        </a></li>
+        <li><a href="#none">실제후기</a></li>
+        <li><a href="HTML/sub-page03.html">프로모션
+          <img src="images/mouse-click-svgrepo-com.svg" alt="img">
+        </a></li>
+      </ul>
+      <div class="login">
+        <a href="HTML/login.html" class="lock">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 11V7C8 5.66667 8.8 3 12 3C13.9103 3 14.9653 3.95032 15.5054 5M8 11H5V21H19V11H8Z"
+              stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <img src="images/mouse-click-svgrepo-com.svg" alt="img">
+        </a>
+        <a href="HTML/login.html" class="myPage">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 15H8C5.79086 15 4 16.7909 4 19V21H20V19C20 16.7909 18.2091 15 16 15Z" stroke="#000000"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+              stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#none" class="search">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 20L15.8033 15.8033M18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18C14.6421 18 18 14.6421 18 10.5Z"
+              stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <img src="images/mouse-click-svgrepo-com.svg" alt="img">
+        </a>
+      </div>
+      <!-- 햄버거 -->
+      <a href="#none" class="trigger-wrap">
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+      <!-- 안보였다가 나타나는 item -->
+      <div class="header-item">
+        <!-- 돋보기 눌렀을 때 나오는 팝업창 -->
+        <div class="main-search">
+          <div class="main-search-btn">
+            <a href="#none"></a>
+          </div>
+          <form class="main-search-box">
+            <label>
+              <input type="search" placeholder="Search" />
+              <button type="submit">
+                <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 20L15.8033 15.8033M18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18C14.6421 18 18 14.6421 18 10.5Z"
+                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
+        <!-- trigger눌렀을 때 나오는 사이트 맵 -->
+        <div class="site-map">
+          <div class="site-map-login">
+            <a href="HTML/login.html" class="lock">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 11V7C8 5.66667 8.8 3 12 3C13.9103 3 14.9653 3.95032 15.5054 5M8 11H5V21H19V11H8Z"
+                  stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="HTML/login.html" class="myPage">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 15H8C5.79086 15 4 16.7909 4 19V21H20V19C20 16.7909 18.2091 15 16 15Z" stroke="#ffffff"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                  stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <div class="site-map-search">
+            <form class="main-search-box">
+              <label>
+                <input type="search" placeholder="궁금하신 제품을 빠르게 찾아보세요." />
+                <button type="submit">
+                  <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20 20L15.8033 15.8033M18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18C14.6421 18 18 14.6421 18 10.5Z"
+                      stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </label>
+            </form>
+          </div>
+          <ul class="site-map-gnb">
+            <li><a href="#none">수면과학</a></li>
+            <li>
+              <a class="chose" href="#none">침대</a>
+              <div class="sub-menu">
+                <a href="HTML/sub-page01.html">인기순위</a>
+                <a href="HTML/sub-page01.html">매트리스</a>
+                <a href="HTML/sub-page01.html">침대프레임</a>
+              </div>
+            </li>
+            <li><a href="#none">미디어</a></li>
+            <li><a href="HTML/sub-page02.html">쇼룸안내</a></li>
+            <li><a href="#none">실제후기</a></li>
+            <li><a href="HTML/sub-page03.html">프로모션</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 메인 슬라이드 전체 틀 희주-->
+  <section class="main-slide-bg">
+    <!-- main -->
+    <!-- 슬라이드 자식들 들어가는 부분 (swiper-slide)-->
+    <!-- <main class="main-slide-wrap .swiper-slide"></main> -->
+    <div class="main-slide-wrap mainSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide main-slide01">
+          <div class="inner main-slide-inner">
+            <div>
+              <div class="main-slide-textBox frist active">
+                <div class="main-slide-title">
+                  <div class="stars">
+                    <img src="images/01.header/header-stars.svg" alt="별점" />
+                  </div>
+                  <h2>
+                    5 Star Hotel<br />
+                    Mattress & Bed
+                  </h2>
+                </div>
+                <div class="main-slide-contents">
+                  <p>
+                    <span>
+                      저희 베스트슬립은 미국에서 인정받은 SPINAL SUPPORTER,
+                      LIFE
+                    </span>
+                    <span>
+                      EDGE, SPECIAL QUILTING ZONE 공법을 적용한 매트리스를
+                      기술제휴를 동해
+                    </span>
+                    <span>
+                      직접 생산하고 관리합니다. 베스트슬립의 매트리스, 침구와
+                      프레임을 조합하시면
+                    </span>
+                    <span>
+                      5성급 호텔침실 느낌 그대로 안방에서 느껴볼 수 있습니다.
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="main-slide more-btn">
+                <a href="#none">
+                  <img src="images/01.header/header-btn01.svg" alt="버튼 아이콘" />
+                  More
+                  <img src="images/01.header/header-btn02.svg" alt="버튼 아이콘" />
+                </a>
+              </div>
+            </div>
+            <div class="main-slide-imgBox">
+              <img src="images/01.header/header03.png" alt="침대이미지" />
+              <img src="images/01.header/header02.png" alt="침대이미지 배경" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-slide02">
+          <div class="inner main-slide-inner">
+            <div class="main-slide-textBox">
+              <div class="main-slide-title">
+                <div class="main-slide-subTitle">
+                  <p>미국척추교정협회 C.O.C.S.A 로부터 척추보호 인증</p>
+                </div>
+                <h2>
+                  CERTIFIED BY<br />
+                  C.O.C.S.A
+                </h2>
+              </div>
+              <div class="main-slide-contents">
+                <p>
+                  <span>
+                    척추나 경추에 통증이 있거나 불편하신가요? 베스트슬립
+                    매트리스로 바꿔보세요.
+                  </span>
+                  <span>
+                    베스트슬립의 매트리스는 1969년 설립되어 가장 공신력 있는
+                    척추교정 협회로 인정받는
+                  </span>
+                  <span>
+                    미국척추교정협회 C.O.C.S.A 로부터 척추보호 인증을 받은
+                    기술력으로 제작됩니다.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="main-slide more-btn">
+              <a href="#none">
+                <img src="images/01.header/header-btn01.svg" alt="버튼 아이콘" />
+                More
+                <img src="images/01.header/header-btn02.svg" alt="버튼 아이콘" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-slide03">
+          <div class="inner main-slide-inner">
+            <div class="main-slide-textBox">
+              <div class="main-slide-title">
+                <h2>Natural Materials</h2>
+                <h2>자연의 편안함 그대로</h2>
+              </div>
+              <div class="main-slide-contents">
+                <p>
+                  <span>
+                    자연의 편안함 그대로. 베스트슬립에서 느껴보세요.
+                  </span>
+                  <span>
+                    베스트 슬립은 자연에 가장 가까운 재료를 바탕으로 매트리스를
+                    만듭니다.
+                  </span>
+                  <span>
+                    양모, 목화 솜, 식물성 FIBER, ORGANIC COTTON등을 엄선한
+                    후,
+                  </span>
+                  <span>
+                    매트리스 장인의 손길을 거쳐 매트리스가 완성됩니다.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="main-slide more-btn">
+              <a href="#none">
+                <img src="images/01.header/header-btn01.svg" alt="버튼 아이콘" />
+                More
+                <img src="images/01.header/header-btn02.svg" alt="버튼 아이콘" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-slide btn">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- modal 진영-->
+  <article class="modal">
+    <div class="modal-wrap">
+      <img class="modal-close-btn" src="images/11.modal-quickMenu/btn.svg" alt="closeBtn">
+      <div class="tab-contents">
+        <div id="tabmenu1">
+          <img src="images/11.modal-quickMenu/logo.svg" alt="logo">
+          <h2>메이크마이웨딩<br>회원전용<br>특별혜택!</h2>
+          <img src="images/11.modal-quickMenu/modal01.png" alt="coffee">
+          <div class="point-title">#혼수 #네이버 카페</div>
+          <img src="images/11.modal-quickMenu/modal02.png" alt="Pillow">
+          <div class="event-desc">
+            <h3>매트리스, 한달 정도는</h3>
+            <span></span>
+            <h3><img src="images/11.modal-quickMenu/icon01.svg" alt="eyes"> 사용해봐야 안다고 하죠?</h3>
+            <span></span>
+            <h3>후기 작성 시, 선물을 드립니다.</h3>
+            <span></span>
+          </div>
+          <h4>2023. 12~</h4>
+        </div>
+        <div id="tabmenu2">
+          <img src="images/11.modal-quickMenu/logo.svg" alt="logo">
+          <div class="product-content1">
+            <div class="product-img">
+              <img src="images/11.modal-quickMenu/modal04.png" alt="pillow">
+              <img src="images/11.modal-quickMenu/icon03.svg" alt="plus">
+              <div class="plusGoods"></div>
+            </div>
+            <div class="product-desc1">
+              <h2>구매 후기 작성 시<br>마이크로화이버 베개 증정</h2>
+              <div class="plus-product">+ 호텔 순면 베개 커버</div>
+              <div class="total-price1">총 200,000 상당</div>
+            </div>
+          </div>
+        </div>
+        <div id="tabmenu3">
+          <img src="images/11.modal-quickMenu/logo.svg" alt="logo">
+          <div class="product-content2">
+            <div class="product-img">
+              <img src="images/11.modal-quickMenu/modal05.png" alt="Sachet">
+              <img src="images/11.modal-quickMenu/icon03.svg" alt="plus">
+              <img src="images/11.modal-quickMenu/modal06.png" alt="spray">
+            </div>
+            <div class="product-desc2">
+              <h2>한 달 리얼 후기 작성 시<br>필로우 스프레이&사쉐 증정</h2>
+              <div class="total-price2">총 10만원 상당</div>
+            </div>
+          </div>
+        </div>
+        <div id="tabmenu4">
+          <img src="images/11.modal-quickMenu/logo.svg" alt="logo">
+          <div class="product-content3">
+            <div class="product-img">
+              <img src="images/11.modal-quickMenu/modal07.png" alt="coffee">
+            </div>
+            <div class="product-desc3">
+              <h2>한 달 리얼 후기 작성 시<br>스타벅스 카페라떼 <span>추가 증정</span></h2>
+              <div class="total-price3">총 1만원 상당<br>기프티콘</div>
+              <p>*기프티콘 발송 전 개별 연락 드립니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-menu">
+        <div class="event-title">
+          <a class="tabmenu1-btn1" href="HTML/sub-page03.html" target="_blank">메이크마이웨딩 이벤트
+            바로가기
+            <img src="images/mouse-click-svgrepo-com.svg" alt="img">
+          </a>
+          <a href="#tabmenu1" class="tabmenu1-btn2">
+            이벤트 다시보기
+            <img src="images/11.modal-quickMenu/icon02.svg" alt="icon02">
+          </a>
+        </div>
+        <div class="event-products">
+          <div class="event-product">
+            <a href="#tabmenu2"><span>EVENT</span><br>PRODUCT 1</a>
+          </div>
+          <div class="event-product">
+            <a href="#tabmenu3"><span>EVENT</span><br>PRODUCT 2</a>
+          </div>
+          <div class="event-product">
+            <a href="#tabmenu4"><span>EVENT</span><br>PRODUCT 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- qickmenu 진영-->
+  <aside class="quickmenu">
+    <div class="quickbtn">
+      <a href="#none">
+        <img src="images/11.modal-quickMenu/quick01.svg" alt="quick01">
+        플친할인
+      </a>
+    </div>
+    <div class="quickbtn">
+      <a href="#none">
+        <img src="images/11.modal-quickMenu/quick02.svg" alt="quick02">
+        상담하기
+      </a>
+    </div>
+    <div class="quickbtn">
+      <a href="#">
+        <img src="images/11.modal-quickMenu/quick03.svg" alt="quick03">
+        TOP
+      </a>
+    </div>
+  </aside>
+
+  <!-- main-banner 진영-->
+  <section class="main-banner">
+    <div class="main-wrap">
+      <div id="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+          <defs>
+            <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+          </defs>
+          <circle cx="150" cy="100" r="75" fill="none" />
+          <g>
+            <use xlink:href="#circlePath" fill="none" />
+            <text fill="#C2CBB5">
+              <textPath xlink:href="#circlePath">We sleep deeply when you sleep deeply.Good night</textPath>
+            </text>
+          </g>
+        </svg>
+      </div>
+      <h2 class="left">We sleep deeply when you sleep deeply.</h2>
+      <div class="star-icon">
+        <img src="images/02.main-banner/main-banner-icon01.svg" alt="star-icon">
+      </div>
+      <p>
+        베스트 슬립의 여정은1990년 시작되었습니다. 지난 30년간 베스트슬립은 항상 같은 꿈을 꿔왔습니다.
+        5성급 호텔의 품격을 나의 침실에서 이 꿈을 이루기 위하여 베스트 슬립의 모든 제품은 최첨단 설비에서 매트리스 장인의 수작업으로
+        만들어집니다. 당신의 편안한 잠을 책임져야 하기 떄문에 베스트슬립은 제품 기획, 디자인, 생산, 배송, 고객상담, A/s 센터
+        모두를 직접 운영하고 있습니다. 당신의 숙면을 저희가 책임지겠습니다. 당신이 편안하게 잠드실 때, 저희도 편하게 잠듭니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- video-slide 진영-->
+  <section class="video-slide">
+    <h2 class="title">It's How It's made That Counts</h2>
+    <div class="star-icon">
+      <img src="images/03.video-slide/video-slide-icon01.svg" alt="icon">
+    </div>
+    <div class="video-contents">
+      <div class="video-slide-left">
+        <ul class="video-slide-list">
+          <li class="clickList">SPRING</li>
+          <li>COMFORT</li>
+          <li>MANUFACTURING</li>
+          <li>MATERIAL</li>
+        </ul>
+      </div>
+      <div class="video-slide-middle">
+        <div class="video-container">
+          <div class="video-wrap">
+            <!--추가-->
+            <div class="videos">
+              <img src="images/03.video-slide/video-slide1.gif" alt="slide1">
+              <img src="images/03.video-slide/video-slide2.gif" alt="slide3">
+              <img src="images/03.video-slide/video-slide3.gif" alt="slide3">
+              <img src="images/03.video-slide/video-slide4.gif" alt="slide4">
+            </div>
+          </div>
+          <span class="video-wrap-line"></span>
+        </div>
+      </div>
+      <div class="video-slide-right">
+        <div class="video-slide-desc-wrap">
+          <div class="video-slide-desc">
+            <h3>베스트슬립은 밀도 높은<br>내장재만을 고집합니다.</h3>
+            <p>세계최고 수준의 메모리 폼을 제조하는 폼 전문 기업과 협업을 통해 한국인의 체형에 최적화된 고밀도 폼을 개발하여 사용합니다.</p>
+          </div>
+          <div class="video-slide-desc">
+            <h3>베스트슬립의<br>스프링은 특별합니다.</h3>
+            <p>독립된 Cell Coil이 매트리스에 가해지는 압력을 독립적으로 분산시켜 옆 사람의 뒤척임에도 흔들리지 않고 안정감 있는 지지력을 선사합니다.</p>
+          </div>
+          <div class="video-slide-desc">
+            <h3>우주 속의 편안함을<br>집에서 느끼실 수 있습니다.</h3>
+            <p>무중력 상태에서 우주비행사의 압력완화를 목적으로 NASA에서 개발된 Pedic MemoryFoam이 탑재되어 수면자의 하중을 빈틈없이 분산시켜줍니다.</p>
+          </div>
+          <div class="video-slide-desc">
+            <h3>베스트슬립의 제조공정은<br>2인 1조로 이루어집니다.</h3>
+            <p>혹시 매트리스를 제조하며 놓치는 부분이 있을까 하는 염려에 매트리스 장인과 숙련공이 2인 1조로 제품을 생산합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- mattress-master 진영-->
+  <section class="mattress-master">
+    <div class="inner">
+
+      <!-- mattress-master 왼쪽 -->
+      <div class="master-left-content">
+        <div class="master-title-wrap">
+          <h2 class="title">
+            Mattresses Designed
+            <img src="images/04.mattress-master/mattress-master-icon.svg" alt="star"><br>
+            the Way They Should Be
+          </h2>
+          <p class="master-content">
+            <span>
+              베스트슬림의 메트리스는 과거부터 이어진 장인정신과 미래의 혁신기술과 현재의
+            </span>
+            <span>
+              가장 훌륭한 소재로 제작됩니다. 자연 그래로의 소재를 기반으로 30년 이상
+              매트리스를
+            </span>
+            <span>
+              만들어온 장인의 수작업을 통하여 최신 기술로 완성됩니다.
+            </span>
+          </p>
+        </div>
+        <div class="master-btn-img-boxs">
+          <div class="master-btn-img-box">
+            <img src="images/04.mattress-master/mattress-master02.png" alt="master01">
+          </div>
+          <div class="master-btn-img-box">
+            <img src="images/04.mattress-master/mattress-master03.png" alt="master02">
+          </div>
+          <div class="master-btn-img-box">
+            <img src="images/04.mattress-master/mattress-master04.png" alt="master03">
+          </div>
+          <div class="master-btn-img-box">
+            <img src="images/04.mattress-master/mattress-master05.png" alt="master04">
+          </div>
+          <div class="master-btn-img-box">
+            <img src="images/04.mattress-master/mattress-master06.png" alt="master05">
+          </div>
+        </div>
+      </div>
+
+      <!-- mattress-master 오른쪽 -->
+      <div class="master-right-content">
+        <div class="master-mettress-wrap">
+          <div class="master-mettress-btn">
+            <img class=mattress-btn src="images/04.mattress-master/mattress-master-btn.svg" alt="btn">
+            <img class=mattress-btn src="images/04.mattress-master/mattress-master-btn.svg" alt="btn">
+            <img class=mattress-btn src="images/04.mattress-master/mattress-master-btn.svg" alt="btn">
+            <img class=mattress-btn src="images/04.mattress-master/mattress-master-btn.svg" alt="btn">
+            <img class=mattress-btn src="images/04.mattress-master/mattress-master-btn.svg" alt="btn">
+          </div>
+          <div class="master-mettress">
+            <img src="images/04.mattress-master/mattress-master01.png" alt="mettress">
+          </div>
+        </div>
+      </div>
+
+      <!-- 모달창 -->
+      <div class="master-modal">
+        <div class="modal-card">
+          <div class="close-btn">
+            <img src="images/04.mattress-master/mattress-master-closeBtn.svg" alt="closeBtn">
+          </div>
+          <div class="card-img">
+            <img src="images/04.mattress-master/mattress-master02.png" alt="master01">
+          </div>
+          <div class="card-desc">
+            <h3>Blk Fabric</h3>
+            <h4>사시사철 뽀송뽀송한 나의 침실</h4>
+            <p>
+              특수 항균 처리된 BLK Fabric이 침실을 항상 쾌적하고 뽀송뽀송하게 유지시켜줍니다.Anti Mosquito 항균 가공된 BLK Fabric 아래로 풍성한 Cushioning
+              Padding이 탑재되어수면자가 누웠을 때, 기분 좋은 느낌으로 수면자의 하중을 분산시켜 줍니다. 최상단부는분리가능한 타퍼로 제작되어 권장 주기에 맞춰 교체시 새것과 같은 느낌을 사용이
+              가능합니다.분리형 타퍼는 푹신-적당-탄탄 으로 세가지 경도로 제작되어 내게 꼭 맞는 느낌을 찾을 수 있습니다.
+            </p>
+          </div>
+        </div>
+        <div class="modal-card">
+          <div class="close-btn">
+            <img src="images/04.mattress-master/mattress-master-closeBtn.svg" alt="closeBtn">
+          </div>
+          <div class="card-img">
+            <img src="images/04.mattress-master/mattress-master03.png" alt="master02">
+          </div>
+          <div class="card-desc">
+            <h3>HYPER CELL COIL</h3>
+            <h4>무려 4,352개의 독립된 Cell Coil</h4>
+            <p>
+              베스트슬립의 스프링은 특별합니다. 2,852개의 독립 CELL COIL과 1,500개의 DOUBLE MICROCELL이 탑재되어 국내최다 수준의 4,352개의 독립된 Cell Coil이
+              매트리스에 가해지는 압력을독립적으로 분산시켜 옆 사람의 뒤척임에도 흔들리지 않고 안정감 있는 지지력을 선사합니다.두 명뿐 아니라 세 명이 누워서 자더라도 4,352개의 독립된 스프링이 수면자
+              각각의 하중을지지해주어 잠버릇이 심한 수면자와 함께 자더라도 흔들림 없이 숙면을 취하실 수 있습니다.
+            </p>
+          </div>
+        </div>
+        <div class="modal-card">
+          <div class="close-btn">
+            <img src="images/04.mattress-master/mattress-master-closeBtn.svg" alt="closeBtn">
+          </div>
+          <div class="card-img">
+            <img src="images/04.mattress-master/mattress-master04.png" alt="master03">
+          </div>
+          <div class="card-desc">
+            <h3>PEDIC MEMORY</h3>
+            <h4>고밀도 저탄성의 NASA 개발 소재</h4>
+            <p>
+              베스트슬립 매트리스에 누우시면 편안함을 바로 느끼실 수 있습니다.무중력 상태에서 우주비행사의 압력완화를 목적으로 NASA에서 개발된 Pedic MemoryFoam이 탑재되어 수면자의 하중을
+              빈틈없이 분산시켜줍니다. 다양한 소재의 충격흡수내장재가 LAYER층을 이루고 있어 압력완화 효과가 탁월합니다. Pedic Memory Foam은수면자의 체형에 맞게 모양이 변형되어 압점없이
+              수면자를 지지해줍니다. 차원이 다른편안함을 느껴보세요.
+            </p>
+          </div>
+        </div>
+        <div class="modal-card">
+          <div class="close-btn">
+            <img src="images/04.mattress-master/mattress-master-closeBtn.svg" alt="closeBtn">
+          </div>
+          <div class="card-img">
+            <img src="images/04.mattress-master/mattress-master05.png" alt="master04">
+          </div>
+          <div class="card-desc">
+            <h3>MATERIALS INSIDE</h3>
+            <h4>CLAVIER REALY SYSTEM</h4>
+            <p>
+              4,352개 이상의 Cell Coil과 유로 필로우탑 공법이적용된 베스트슬립 지큐브 10 BLACK 시리즈.독자적인 기술의 스파이널 써포트, 라이프 엣지등을 비롯해양질의 내장재를 아낌없이
+              담았습니다.유로 필로우탑 타퍼에 푹신하게 허리를 감싸주는 ED폼이 탑재되어매트리스가 온몸을 편안히 감싸주는 기분을 느끼실 수 있습니다.편안함을 제공하는 ED폼과 탄성과 복원력이 탁월한
+              RS폼과 PEDIC메모리가탑재되어 뒤척임없이 숙면을 취할 수 있습니다.
+            </p>
+          </div>
+        </div>
+        <div class="modal-card">
+          <div class="close-btn">
+            <img src="images/04.mattress-master/mattress-master-closeBtn.svg" alt="closeBtn">
+          </div>
+          <div class="card-img">
+            <img src="images/04.mattress-master/mattress-master06.png" alt="master05">
+          </div>
+          <div class="card-desc">
+            <h3>MACRO CELL COIL</h3>
+            <h4>CLAVIER REALY SYSTEM</h4>
+            <p>
+              베스트슬립의 매트리스는 Z0 BASE와 함께 투매트리스로 사용시 최적의 편안함을경험하실 수 있습니다. 상단 매트리스에서 전해진 압력 그대로 Z0 BASE 매트리스에전달되어 보다 안락한
+              느낌으로 보다 오랜 기간 새것과 같은 느낌으로 사용이 가능합니다.베스트슬립의 파운데이션 Z0 BASE는 독립 CELL COIL로 제작됩니다.일반적인 파운데이션과 달리 독립된 스프링으로
+              제작되어 흔들림 없이 안락한 숙면을취하실 수 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- series 규남-->
+  <section class="series">
+    <div class="star-icon">
+      <img src="images/05.series/series-icon01.svg" alt="image">
+    </div>
+    <h2 class="title">Series</h2>
+    <h3 class="sub-title">시리즈</h3>
+    <div class="series-items swiper">
+      <div class="swiper-wrapper">
+        <div class="series-item01 swiper-slide">
+          <h4 class="series-item-title">L series</h4>
+          <div class="series-item-size-wrap">
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#b8b2b2" />
+              </svg>
+              <span>Single / Super Single</span>
+            </p>
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#b8b2b2" />
+              </svg>
+              <span>Double</span>
+            </p>
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#b8b2b2" />
+              </svg>
+              <span>Queen / King</span>
+            </p>
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#b8b2b2" />
+              </svg>
+              <span>Custom Size</span>
+            </p>
+          </div>
+        </div>
+        <div class="series-item02 swiper-slide">
+          <img class="left-star-icon" src="images/05.series/series-icon02.svg" alt="star-images">
+          <h4 class="series-item-title">M series</h4>
+          <div class="series-item-size-wrap">
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#B8AE94" />
+              </svg>
+              <span>Single / Super Single</span>
+            </p>
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#B8AE94" />
+              </svg>
+              <span>Double</span>
+            </p>
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#B8AE94" />
+              </svg>
+              <span>Custom Size</span>
+            </p>
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#B8AE94" />
+              </svg>
+              <span>Queen / King</span>
+            </p>
+          </div>
+        </div>
+        <div class="series-item03 swiper-slide">
+          <img class="left-star-icon" src="images/05.series/series-icon02.svg" alt="star-images">
+          <h4 class="series-item-title title-sm">SM series</h4>
+          <div class="series-item-size-wrap">
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#A79D82" />
+              </svg>
+              <span>Single / Super Single</span>
+            </p>
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#A79D82" />
+              </svg>
+              <span>Double</span>
+            </p>
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#A79D82" />
+              </svg>
+              <span>Queen / King</span>
+            </p>
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#A79D82" />
+              </svg>
+              <span>Custom Size</span>
+            </p>
+          </div>
+        </div>
+        <div class="series-item04 swiper-slide">
+          <img class="left-star-icon" src="images/05.series/series-icon02.svg" alt="star-images">
+          <h4 class="series-item-title">W series</h4>
+          <div class="series-item-size-wrap">
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#E4DED2" />
+              </svg>
+              <span>Super Single</span>
+            </p>
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#E4DED2" />
+              </svg>
+              <span>Queen</span>
+            </p>
+          </div>
+        </div>
+        <div class="series-item05 swiper-slide">
+          <img class="left-star-icon" src="images/05.series/series-icon02.svg" alt="star-images">
+          <h4 class="series-item-title">Z series</h4>
+          <div class="series-item-size-wrap">
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#ECF4E5" />
+              </svg>
+              <span>Single / Super Single</span>
+            </p>
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#ECF4E5" />
+              </svg>
+              <span>Double</span>
+            </p>
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#ECF4E5" />
+              </svg>
+              <span>Queen / King</span>
+            </p>
+            <p>
+              <svg width="24" height="25" viewBox="0 0 24 25">
+                <path
+                  d="M0.143433 0.246093C11.6706 10.7827 12.4728 10.7827 24 0.246094C13.4651 11.7713 13.4651 12.5774 24 24.1027C12.4728 13.5661 11.6706 13.5661 0.143432 24.1027C10.6783 12.5736 10.6783 11.7713 0.143433 0.246093Z"
+                  fill="#ECF4E5" />
+              </svg>
+              <span>Custom Size</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+
+  <!-- review 희주-->
+  <section class="review">
+    <h2 class="title">Real Review</h2>
+    <div class="star-icon">
+      <img src="./images/06.review/review-icon01.svg" alt="icon" />
+    </div>
+    <!-- 위쪽 슬라이드 -->
+    <div class="review-slide-wrap top">
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            몇년전에 퀵슬립 매트리스 구입해서 사용하고 있습니다. 조카가 집에
+            놀러와서 자보고는 아주 편하게 꿀잠잤다고 작년에 구매하고
+            있어요.새롭게 리뉴얼 됐다고 해서 다를까 생각했는데 딸 독립으로
+            강남점에 가서 직접 누워보고 구매해서 매장에서 바로 가져 왔어요.
+            편안하고 좋아요. 강남점 친절하시고 차에 직접 옮겨주시고 완전
+            만족합니다.
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 1.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.24 (수)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            매트리스 한 번 구매하면 오래 쓰고 매일 쓰는 물건이라 고민고민하다
+            쇼룸에서 가서 직접 누워보고 베스트슬립 L3 양면 유로탑으로
+            결정했어요 배송은 2주 정도 걸렸고 2주 정도 사용해보니 쿠션감도
+            익숙해지고 편안하게 꿀잠 자네요 좋은 제품 합리적으로 구매하여 너무
+            좋네요
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 2.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.23 (화)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            매장에 가서 직접 누워 볼 수 있던게 좋았구요~대구달서점 지점에 점원
+            분들의 능숙한 서비스와 친절한 응대가 매우 좋았습니다~오랜만에 팔
+            다리 자유롭게 휘적거리며 수면할 수 있어서 너무 좋았습니다!
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 3.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.21 (일)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            이사를 하게 되면서 여러매장을 다 둘러봤습니다그러던중 베스트슬립
+            브랜드를 알게되었어요.쇼룸에 가서 직원분에게 매트리스와 프레임에
+            관한 자세한 설명을 듣고 직접 누워보고 베스트슬립으로 결정하게
+            되었어요!미디움정도의 편안함을 원했고 두가지 정도 제품중
+            고민하다가 이제품으로 구매했어요.이제품도 가격대는 있지만 시**의
+            비하면 같은 고급퀄리티이면서 가성비있는 구매였다고
+            생각합니다.2주정도 사용했는데 너무 만족해서 지인에게도
+            추천해주었어요. 쇼룸 꼭 가보세요. 직원도 정말 친절해서
+            좋았습니다^^
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 4.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.19 (금)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            쇼룸에 직접 방문 후 누워봤는데 확실히 S5가 더 탄탄하더라구요! ㅎㅎ
+            높이 때문에 S4랑 아주 잠시 고민하다 ㅎㅎ결국 탄탄한 하드 카키 S5로
+            결정했네요~! 9개월부터인가 새벽에 중간중간 깨던 아이는 엘라비아
+            깔아준 첫 날 14시간이란 통잠을 기록했습니다~! 감사합니다^^
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 5.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.13 (토)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            매트리스는 고가이고 쉽게 바꿀수 없는 제품이라서 제품을
+            선택하기까지 정말 많은 시간이 걸렸는데 왜 걱정했을까 싶을 만큼
+            좋은 제품이에요. 진짜 꿀잠자게 해주는 마법의 매트리스~
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 6.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.12 (금)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            한달 사용후기 입니다 살면서 왜 진작에 메트리스 바꾸지 않았을까
+            하는 생각이 잘때마다 들정도로 만족스럽습니다 일단 누워도 아프던
+            허리통증이 사라졌고 오래누워있어도 허리가 안아파서 매우만족합니다.
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 7.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.11 (목)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            탄탄하지만 적당한 쿠션감이 있습니다. 이전 매트리스는 자고나면 한쪽
+            허리가 꿍한 느낌이었는데 z7으로 바꾸고 나서는 몸이 너무
+            개운합니다. 킹 사이즈 구매하였고 저와 제 남편 모두 만족하면서
+            사용하고 있습니다 :)
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 8.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.07 (일)</p>
+        </div>
+      </div>
+    </div>
+    <!-- 아래쪽 슬라이드 -->
+    <div class="review-slide-wrap bottom">
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            쇼룸에 직접 방문 후 누워봤는데 확실히 S5가 더 탄탄하더라구요! ㅎㅎ
+            높이 때문에 S4랑 아주 잠시 고민하다 ㅎㅎ결국 탄탄한 하드 카키 S5로
+            결정했네요~! 9개월부터인가 새벽에 중간중간 깨던 아이는 엘라비아
+            깔아준 첫 날 14시간이란 통잠을 기록했습니다~! 감사합니다^^
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 5.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.13 (토)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            매트리스는 고가이고 쉽게 바꿀수 없는 제품이라서 제품을
+            선택하기까지 정말 많은 시간이 걸렸는데 왜 걱정했을까 싶을 만큼
+            좋은 제품이에요. 진짜 꿀잠자게 해주는 마법의 매트리스~
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 6.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.12 (금)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            한달 사용후기 입니다 살면서 왜 진작에 메트리스 바꾸지 않았을까
+            하는 생각이 잘때마다 들정도로 만족스럽습니다 일단 누워도 아프던
+            허리통증이 사라졌고 오래누워있어도 허리가 안아파서 매우만족합니다.
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 7.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.11 (목)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            탄탄하지만 적당한 쿠션감이 있습니다. 이전 매트리스는 자고나면 한쪽
+            허리가 꿍한 느낌이었는데 z7으로 바꾸고 나서는 몸이 너무
+            개운합니다. 킹 사이즈 구매하였고 저와 제 남편 모두 만족하면서
+            사용하고 있습니다 :)
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 8.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.07 (일)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            몇년전에 퀵슬립 매트리스 구입해서 사용하고 있습니다. 조카가 집에
+            놀러와서 자보고는 아주 편하게 꿀잠잤다고 작년에 구매하고
+            있어요.새롭게 리뉴얼 됐다고 해서 다를까 생각했는데 딸 독립으로
+            강남점에 가서 직접 누워보고 구매해서 매장에서 바로 가져 왔어요.
+            편안하고 좋아요. 강남점 친절하시고 차에 직접 옮겨주시고 완전
+            만족합니다.
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 1.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.24 (수)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            매트리스 한 번 구매하면 오래 쓰고 매일 쓰는 물건이라 고민고민하다
+            쇼룸에서 가서 직접 누워보고 베스트슬립 L3 양면 유로탑으로
+            결정했어요 배송은 2주 정도 걸렸고 2주 정도 사용해보니 쿠션감도
+            익숙해지고 편안하게 꿀잠 자네요 좋은 제품 합리적으로 구매하여 너무
+            좋네요
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 2.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.23 (화)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            매장에 가서 직접 누워 볼 수 있던게 좋았구요~대구달서점 지점에 점원
+            분들의 능숙한 서비스와 친절한 응대가 매우 좋았습니다~오랜만에 팔
+            다리 자유롭게 휘적거리며 수면할 수 있어서 너무 좋았습니다!
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 3.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.21 (일)</p>
+        </div>
+      </div>
+      <div class="review-slide">
+        <div class="review-slide-text">
+          <p>
+            이사를 하게 되면서 여러매장을 다 둘러봤습니다그러던중 베스트슬립
+            브랜드를 알게되었어요.쇼룸에 가서 직원분에게 매트리스와 프레임에
+            관한 자세한 설명을 듣고 직접 누워보고 베스트슬립으로 결정하게
+            되었어요!미디움정도의 편안함을 원했고 두가지 정도 제품중
+            고민하다가 이제품으로 구매했어요.이제품도 가격대는 있지만 시**의
+            비하면 같은 고급퀄리티이면서 가성비있는 구매였다고
+            생각합니다.2주정도 사용했는데 너무 만족해서 지인에게도
+            추천해주었어요. 쇼룸 꼭 가보세요. 직원도 정말 친절해서
+            좋았습니다^^
+          </p>
+        </div>
+        <div class="review-slide-icon">
+          <ul>
+            <li>
+              <img src="images/06.review/review-avata 4.svg" alt="avata icon" />
+            </li>
+            <li>
+              <img src="images/06.review/review-stars.svg" alt="start icon" />
+            </li>
+          </ul>
+          <p>01.19 (금)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- best 희주-->
+  <section class="best">
+    <div class="inner best-inner">
+      <h2 class="title">Best Collection</h2>
+      <ul class="best-tab-menu">
+        <li><a class="select" href="#none">매트리스 TOP3</a></li>
+        <li><a href="#none">프레임 TOP3</a></li>
+      </ul>
+      <div class="best-items">
+        <!-- tab중에 매트리스 부분 -->
+        <div class="best-item-wrap mattress">
+          <div class="best-left-img">
+            <img src="images/07.best/best07.png" alt="best item img" />
+          </div>
+          <div class="best-rigth-wrap">
+            <div class="best-textBox">
+              <div class="best-title">
+                <div class="best-title-h5">
+                  <h5>Number.01</h5>
+                  <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.894531 18.4063C17.5671 17.6577 18.1733 17.0515 18.9219 0.378906C19.6702 17.0488 20.2794 17.6579 36.9492 18.4063C20.2766 19.1548 19.6704 19.761 18.9219 36.4336C18.1707 19.7609 17.5644 19.1546 0.894531 18.4063Z"
+                      fill="#FF8B2E" />
+                  </svg>
+                </div>
+                <h3>Best Sleep Z8B</h3>
+              </div>
+              <div class="hashtag">
+                <a href="#none">#혼수침대</a>
+                <a href="#none">#Z8BLACK</a>
+              </div>
+              <div class="best-wrap-contents">
+                <p>베스트슬립 판매량 1위 프리미엄 매트리스 Z8BLACK</p>
+                <p>
+                  3,325개의 셀코일이 하중을 고르게 분산시켜주는
+                  매트리스(Q사이즈 기준)
+                </p>
+                <span>· 추천고객 : 혼수를 준비하는 신혼 부부, 몸에 지지력이
+                  필요한 고객</span>
+              </div>
+            </div>
+            <div class="best-mini-img">
+              <div id="Z8B">
+                <a href="#none">
+                  <img src="images/07.best/best01.png" alt="best thumbnail" />
+                </a>
+              </div>
+              <div id="Z10">
+                <a href="#none">
+                  <img src="images/07.best/best02.png" alt="best thumbnail" />
+                </a>
+              </div>
+              <div id="Z10B">
+                <a href="#none">
+                  <img src="images/07.best/best03.png" alt="best thumbnail" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tab중에 프레임 부분 -->
+        <div class="best-item-wrap frame">
+          <div class="best-left-img">
+            <img src="images/07.best/best10.png" alt="best item img" />
+          </div>
+          <div class="best-rigth-wrap">
+            <div class="best-textBox">
+              <div class="best-title">
+                <div class="best-title-h5">
+                  <h5>Number.04</h5>
+                  <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.894531 18.4063C17.5671 17.6577 18.1733 17.0515 18.9219 0.378906C19.6702 17.0488 20.2794 17.6579 36.9492 18.4063C20.2766 19.1548 19.6704 19.761 18.9219 36.4336C18.1707 19.7609 17.5644 19.1546 0.894531 18.4063Z"
+                      fill="#FF8B2E" />
+                  </svg>
+                </div>
+                <h3>Best Sleep Carolyn</h3>
+              </div>
+              <div class="hashtag">
+                <a href="#none">#수납형</a>
+                <a href="#none">#trendy</a>
+              </div>
+              <div class="best-wrap-contents">
+                <p>패브릭과 우드가 어우러진 세련된 디자인</p>
+                <p>트렌디한 감성이 돋보이는 수납형 프레임, 캐롤린</p>
+                <span>· 추천고객 : 패브릭 재질을 선호하는 고객, 호텔 침대의
+                  와이드한 헤드를 원하는 고객</span>
+              </div>
+            </div>
+            <div class="best-mini-img">
+              <div id="Carolyn">
+                <a href="#none">
+                  <img src="images/07.best/best04.png" alt="best thumbnail" />
+                </a>
+              </div>
+              <div id="Heidi">
+                <a href="#none">
+                  <img src="images/07.best/best05.png" alt="best thumbnail" />
+                </a>
+              </div>
+              <div id="Brandon">
+                <a href="#none">
+                  <img src="images/07.best/best06.png" alt="best thumbnail" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="best-btn">
+        <a href="HTML/sub-page01.html">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M31.3473 16.0268C31.3473 24.1255 24.6301 30.7098 16.3202 30.7098C8.01025 30.7098 1.29297 24.1255 1.29297 16.0268C1.29297 7.92808 8.01025 1.34375 16.3202 1.34375C24.6301 1.34375 31.3473 7.92808 31.3473 16.0268Z"
+              stroke="#1c2844" />
+            <ellipse cx="3.05013" cy="2.98253" rx="3.05013" ry="2.98253" transform="matrix(-1 0 0 1 19.3711 13.0469)"
+              fill="#1c2844" />
+          </svg>
+          More
+          <svg class="more-ani" width="69" height="12" viewBox="0 0 69 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.179688 10.638H68.1191L62.5237 1.04688" stroke="#1c2844" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- showroom 규남-->
+  <section class="showroom">
+    <div class="inner showroom-inner">
+      <div class="star-icon">
+        <img src="images/08.showroom/showroom-icon01.svg" alt="icon">
+      </div>
+      <h2 class="title">SHOWROOM</h2>
+      <h3 class="sub-title">쇼룸 안내</h3>
+
+
+      <div class="showroom-content-wrap">
+        <div class="showroom-content-left"></div>
+        <div class="showroom-content-right">
+          <div class="showroom-right-title">
+            <h4>전국 매장 정보 안내</h4>
+            <span>총 <strong>33개</strong>의 매장이 있습니다.</span>
+          </div>
+          <ul class="showroom-list">
+
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom01.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  강남점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>강남구 테헤란로8길 42 퍼스트역삼 3층</p>
+                <span>02-538-2407 / 010-5130-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom02.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  노원점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>서울특별시 노원로 449 명주빌딩 3층</p>
+                <span>02-933-2407 / 010-9691-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom03.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  명동점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>서울특별시 중구 을지로 80-1
+                  (을지로2가) 보승빌딩 2층 204호</p>
+                <span>02-3789-7247 /
+                  010-6784-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom04.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  목동점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>서울특별시 양천구 오목로 299
+                  웨스턴에비뉴 1층</p>
+                <span>02-2644-2407 /
+                  010-6571-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom05.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  방배점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>서울 서초구 동작대로134,
+                  가나안빌딩 2층</p>
+                <span>02-595-2407 /
+                  010-6815-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom06.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  수유점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>확장 이전 예정(휴무 23년 10월 4일~)</p>
+                <span>02-6954-2407 /
+                  010-9529-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom07.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  잠실점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>서울특별시 송파구 백제고분로 276
+                  공익빌딩 5층</p>
+                <span>02-420-2407 /
+                  010-9857-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom08.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  광교점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>경기도 용인시 기흥구 영덕동1275
+                  사이로직빌딩 2층 201호</p>
+                <span>031-212-2407 /
+                  010-7299-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom09.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  광명점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>경기도 광명시 신기로17번길 11,
+                  센트럴스퀘어 3층 301호</p>
+                <span>02-899-2407 /
+                  010-9846-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom10.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  김포점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>경기 김포시 김포대로 709
+                  퍼스트블루 13층 1301호</p>
+                <span>031-983-2407 /
+                  010-7285-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom11.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  남양주점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>경기도 남양주시 순화궁로 343
+                  4층 401호</p>
+                <span>031-571-2407 /
+                  010-6854-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom12.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  인천점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>인천 남동구 인하로 489번길 16
+                  세동네오스 2층</p>
+                <span>032-424-2407 /
+                  010-9686-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom13.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  동탄점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>경기도 화성시 동탄산단 8길 24
+                  일성타워 2층</p>
+                <span>031-377-2407 /
+                  010-9859-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom14.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  분당점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>경기도 성남시 분당구 성남대로
+                  926번길 10, 탑빌딩 5층</p>
+                <span>031-781-2407 /
+                  010-9863-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom15.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  수지점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>경기도 용인시 수지구 포은대로 456
+                  1층</p>
+                <span>031-262-2407 /
+                  010-6548-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom16.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  안산점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>경기도 안산시 상록구 상록수로 34
+                  상록수아카데미타워 2층 204호</p>
+                <span>031-409-2407 /
+                  010-6862-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom17.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  일산점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>경기도 고양시 일산서구 중앙로 1548
+                  전자랜드파워센터 일산점 4층</p>
+                <span>031-901-2407 /
+                  010-7409-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom18.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  평택점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>경기도 평택시 소사5길 120
+                  TW빌딩 3층</p>
+                <span>031-651-2407 /
+                  010-6823-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom19.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  하남점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>경기도 하남시 미사강변 중앙로 208번지
+                  부강타워 14층 1401호</p>
+                <span>031-792-2407 /
+                  010-5498-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom20.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  구미점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>경북 구미시 구미대로 316
+                  2층</p>
+                <span>054-464-2407 /
+                  010-7390-2407 </span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom21.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  대구수성점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>대구광역시 수성구 달구벌대로 2575
+                  14층</p>
+                <span>053-744-2407 /
+                  010-7294-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom22.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  대구달서점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>대구광역시 달서구 달구벌대로 1545
+                  골든뷰메디타워 14층 1401호</p>
+                <span>053-561-2407 /
+                  010-9849-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom23.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  창원점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>경남 창원시 성산구 용지로 133번길 3
+                  한서빌딩 3층</p>
+                <span>055-262-2407 /
+                  010-2532-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom24.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  울산점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>울산광역시 남구 화합로 150
+                  EZIP빌딩 7층</p>
+                <span>052-267-2407 /
+                  010-9586-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom25.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  부산센텀점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>부산시 해운대구 센텀2로 33
+                  센텀뷰라움 2층</p>
+                <span>051-745-8724 /
+                  010-6763-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom26.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  부산중앙점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>부산광역시 중구 중앙대로 72
+                  유창빌딩 1층,2층</p>
+                <span>051-466-2407 /
+                  010-9589-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom27.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  원주점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>강원 원주시 서원대로 125-1
+                  2층</p>
+                <span>033-734-2407 /
+                  010-6684-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom28.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  대전둔산점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>대전광역시 서구 대덕대로 234
+                  전자랜드대전둔산점 5층</p>
+                <span>042-482-2407 /
+                  010-9752-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom29.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  대전관저점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>대전광역시 서구 관저북로13번길 23-24
+                  4층 401호</p>
+                <span>042-541-2407 /
+                  010-6715-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom30.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  천안점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>충남 천안시 서북구 공원로 219
+                  지스퀘어 3층</p>
+                <span>041-566-2407 /
+                  010-9884-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom31.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  청주점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>충청북도 청주시 흥덕구 대농로 45
+                  청주지웰시티 푸르지오 3층 301호</p>
+                <span>043-238-2407 /
+                  010-9627-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom32.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  광주점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>광주광역시 서구 상무중앙로 24
+                  엠씨타워 2층</p>
+                <span>062-372-2407 /
+                  010-6751-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+            <li>
+              <a href="#none" data-showroomImg="./images/08.showroom/showroom33.png">
+                <h5>
+                  <img src="images/08.showroom/showroom-icon-map.svg" alt="icon">
+                  전주점
+                </h5>
+                <div class="heart-icon"></div>
+                <p>전북 전주시 완산구 홍산로 246
+                  계성이지움빌딩 101동 804호</p>
+                <span>063-237-2407 /
+                  010-7259-2407</span>
+                <button>네이버예약</button>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+
+
+      <a href="HTML/sub-page02.html" class="more-btn">
+        <img src="images/08.showroom/showroom-btn01.svg" alt="img">
+        <span>More</span>
+        <img class="arrow" src="images/08.showroom/showroom-btn02.svg" alt="img">
+      </a>
+    </div>
+  </section>
+
+
+  <!-- commend 규남-->
+  <section class="commend">
+    <div class="inner commend-inner">
+      <h2 class="title">What's your best mattress?</h2>
+      <div class="star-icon">
+        <img src="images/08.showroom/showroom-icon01.svg" alt="icon">
+      </div>
+      <div class="commend-box">
+        <form>
+          <div class="commend-left">
+            <h3>나에게 딱 맞는 <span>매트리스</span>는?</h3>
+            <p>
+              나는
+              <select id="mettress-or">
+                <option value="-1" selected disable>매트리스 / 토퍼</option>
+                <option>매트리스</option>
+                <option>토퍼</option>
+              </select>
+              에
+              <select id="spring-or">
+                <option value="-1" selected disable>스프링 / 폼</option>
+              </select>
+              이 있고
+              <select id="hard-or">
+                <option value="-1" selected disable>단단함 정도</option>
+              </select>
+              의
+              <select id="price-or">
+                <option value="-1" selected disable>가격</option>
+              </select>
+              매트리스를 원합니다.
+            </p>
+          </div>
+          <div class="commend-right">
+            <p>
+              <strong>매트리스 / 토퍼 </strong>
+              <span class="result">옵션을 선택해주세요.</span>
+            </p>
+            <p>
+              <strong>단단함 정도</strong>
+              <span class="result">옵션을 선택해주세요.</span>
+            </p>
+            <p>
+              <strong>스프링 & 폼</strong>
+              <span class="result">옵션을 선택해주세요.</span>
+            </p>
+            <p>
+              <strong>가격</strong>
+              <span class="result">옵션을 선택해주세요.</span>
+            </p>
+            <div>
+              <button type="submit" class="commend-btn">추천받기</button>
+              <input type="reset" value="Reset" class="reset-btn">
+            </div>
+          </div>
+        </form>
+        <div class="result-box">
+          <a href="#none" class="result-close">
+            <img src="images/09.commend/close-icon.svg" alt="img">
+          </a>
+          <div class="result-content">
+            <div class="result-top">
+              <img src="images/09.commend/commend-icon01.svg" alt="img">
+              <h4>추천 상품</h4>
+              <img src="images/09.commend/commend-icon01.svg" alt="img">
+            </div>
+            <div class="result-bottom">
+              <h5></h5>
+              <div class="result-item">
+                <h5>title</h5>
+                <div class="result-item-content">
+                  <a href="#none">content</a>
+                  <a href="#none">content</a>
+                  <a href="#none">content</a>
+                </div>
+              </div>
+              <div class="result-item">
+                <h5>title</h5>
+                <div class="result-item-content">
+                  <a href="#none">content</a>
+                  <a href="#none">content</a>
+                  <a href="#none">content</a>
+                </div>
+              </div>
+              <div class="result-item">
+                <h5>title</h5>
+                <div class="result-item-content">
+                  <a href="#none">content</a>
+                  <a href="#none">content</a>
+                  <a href="#none">content</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer 진영-->
+  <footer class="footer">
+    <!-- 푸터 윗부분 -->
+    <div class="footer-top">
+      <div class="footer-top-left">
+        <div class="faq">
+          <div class="faq-title">
+            <h3>FAQ</h3>
+            <a href="#none">
+              <img src="images/10.footer/footer-icon02.svg" alt="icon02">더보기
+            </a>
+          </div>
+          <span></span>
+          <ul class="faq-list">
+            <li><a href="#none">주문 후 수령까지 얼마나 걸리나요?</a></li>
+            <li><a href="#none">아직 필요한 날짜가 많이 남았는데,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;미리 주문하고 지정일 배송이 가능한가요?</a></li>
+            <li><a href="#none">배송 시간을 지정하여 받을 수 있을까요?</a></li>
+            <li><a href="#none">주문 맞춤 사이즈 제작이 가능한가요?</a></li>
+          </ul>
+        </div>
+        <div class="customer">
+          <div class="customer-title">
+            <h3>고객센터</h3>
+          </div>
+          <span></span>
+          <div class="customer-list">
+            <h4><span>대표번호</span><br>1522-7247</h4>
+            <div class="perating-hours">
+              <h5><span>평일</span> 08:00~17:00<br>
+                <span>토요일</span> 08:00~12:00
+              </h5>
+            </div>
+            <p>
+              <span>공휴일, 일요일은 휴무</span>로<br>
+              답변이 지연될 수 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-top-right">
+        <div class="map">
+          <div class="map-title">
+            <h3>
+              <img src="images/10.footer/footer-icon-map.svg" alt="map-icon">
+              찾아오시는 길
+            </h3>
+            <p>서울특별시 강남구 테헤란로8길 42 (역삼동) 퍼스트역삼빌딩 3층 06240</p>
+          </div>
+          <div class="map-image">
+            <div id="map" style="width:100%;height:100%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 푸터 중간 슬라이드 부분 -->
+    <div class="footer-news">
+      <div class="footer-news-wrap">
+        <h3>공지사항</h3>
+        <div class="footer-new">
+          <div class="swiper footerSwiper">
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide"><a href="#none">2월 카드사별 무이자 혜택 안내</a></div>
+              <div class="swiper-slide"><a href="#none">1월 카드사별 무의자 혜택 안내</a></div>
+              <div class="swiper-slide"><a href="#none">12월 카드사별 무이자 혜택 안내</a></div>
+              <div class="swiper-slide"><a href="#none">11월 카드사별 무이자 혜택 안내</a></div>
+              <div class="swiper-slide"><a href="#none">10월 카드사별 무이자 혜택 안내</a></div>
+              <div class="swiper-slide"><a href="#none">9월 카드사별 무이자 혜택 안내</a></div>
+              <div class="swiper-slide"><a href="#none">8월 카드사별 무이자 혜택 안내</a></div>
+              <div class="swiper-slide"><a href="#none">7월 카드사별 무이자 혜택 안내</a></div>
+            </div>
+          </div>
+        </div>
+        <a href="#none"><img src="images/10.footer/footer-icon01.svg" alt="pulus"></a>
+      </div>
+    </div>
+    <!-- 푸터 제일 아래부분 -->
+    <div class="footer-bottom">
+      <div class="logo">
+        <img src="images/10.footer/footer-logo.svg" alt="footer-logo">
+      </div>
+      <p>
+        소재지 : 서울특별시 강남구 테헤란로8길 42 (역삼동) 퍼스트역삼빌딩 3층 06240 전화 : 1522-7247 AS접수 : AS신청서작성 특판/대량구매/제휴/입점문의 :
+        cs001@corporatez.us<br>상호명 : 지큐브스페이스 주식회사 / 사업자 등록번호 : 233-81-04610 / 통신판매신고 : 제2017-서울 강남 -04488호 / 대표이사 : 서진원
+        / 개인정보책임자 : 서진원<br>Copyright ⓒ 2023 Bestsleep Z Cube. |<a href="https://bestsleep.us/shopinfo/term.html"
+          target="_blank"> 이용약관</a> | <a href="https://bestsleep.us/member/privacy.html" target="_blank">개인정보취급방침</a>
+      </p>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- 커스텀 할 js 파일 -->
+  <script src="script/mainScroll.js"></script>
+  <script src="script/main-banner.js"></script>
+  <script src="script/quick-menu.js"></script>
+  <script src="script/modal.js"></script>
+  <script src="script/video-slide.js"></script>
+  <script src="script/mattress-master.js"></script>
+  <script src="script/footer.js"></script>
+  <script src="script/series.js"></script>
+  <script src="script/showroom.js"></script>
+  <script src="script/commend.js"></script>
+  <script src="script/main-slide-bg.js"></script>
+  <script src="script/best.js"></script>
+</body>
+
+</html>

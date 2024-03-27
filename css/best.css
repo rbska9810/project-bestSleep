@@ -1,0 +1,275 @@
+/* ===========reset=========== */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/* font */
+/* font */
+/* main-color */
+/* gray-scale */
+/* navy-color */
+.best {
+  background: url(../images/07.best/best-bg.png) no-repeat;
+  background-color: #f6f6f5;
+}
+.best.fade .best-inner .best-items .best-item-wrap .best-left-img {
+  opacity: 1;
+  transform: translate(0);
+  will-change: auto;
+}
+.best.fade .best-inner .best-items .best-item-wrap .best-rigth-wrap .best-textBox .best-title,
+.best.fade .best-inner .best-items .best-item-wrap .best-rigth-wrap .best-textBox .hashtag,
+.best.fade .best-inner .best-items .best-item-wrap .best-rigth-wrap .best-textBox .best-wrap-contents {
+  opacity: 1;
+  transform: translate(0);
+  will-change: auto;
+}
+.best.fade .best-inner .best-items .best-item-wrap .best-rigth-wrap .best-mini-img {
+  opacity: 1;
+  transform: translate(0);
+  will-change: auto;
+}
+.best .best-inner {
+  text-align: center;
+  padding: 180px 0;
+}
+.best .best-inner .best-tab-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 40px;
+}
+.best .best-inner .best-tab-menu li {
+  font-size: 1.563rem;
+  display: flex;
+  align-items: center;
+}
+.best .best-inner .best-tab-menu li:nth-child(1):after {
+  content: " ";
+  background: url(../images/07.best/best-icon01.svg) no-repeat;
+  width: 24px;
+  height: 25px;
+  display: inline-block;
+  margin-left: 40px;
+}
+.best .best-inner .best-tab-menu li a {
+  padding: 10px 0;
+  display: inline-block;
+  border-bottom: none;
+  color: #adaeb1;
+  transition: 0.3s;
+  position: relative;
+}
+.best .best-inner .best-tab-menu li a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  bottom: 0px;
+  background-color: #1c2844;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+.best .best-inner .best-tab-menu li a.select {
+  color: #1c2844;
+}
+.best .best-inner .best-tab-menu li a.select::before {
+  width: 100%;
+}
+.best .best-inner .best-tab-menu li a:hover {
+  color: #1c2844;
+}
+.best .best-inner .best-items .best-item-wrap {
+  padding: 90px 0 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.best .best-inner .best-items .best-item-wrap.frame .best-mini-img #Carolyn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.best .best-inner .best-items .best-item-wrap.frame .best-mini-img #Carolyn a img {
+  width: 200px;
+  height: 110px;
+}
+.best .best-inner .best-items .best-item-wrap .best-left-img {
+  width: 550px;
+  height: 600px;
+  border-radius: 50px;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition-property: transform, opacity;
+  will-change: transform, opacity;
+}
+.best .best-inner .best-items .best-item-wrap .best-left-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.best .best-inner .best-items .best-rigth-wrap {
+  width: 670px;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-textBox {
+  text-align: left;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-textBox .best-title {
+  font-size: 2.813rem;
+  line-height: 1.2;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(50px);
+  transition-property: transform, opacity;
+  will-change: transform, opacity;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-textBox .best-title .best-title-h5 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-textBox .best-title h5 {
+  font-family: "Kaisei Tokumin", serif;
+  color: #FF8B2E;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-textBox .best-title h3 {
+  font-family: "Kaisei Tokumin", serif;
+  color: #1c2844;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-textBox .hashtag {
+  display: flex;
+  gap: 10px;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(50px);
+  transition-delay: 0.2s;
+  transition-property: transform, opacity;
+  will-change: transform, opacity;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-textBox .hashtag a {
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #1c2844;
+  border-radius: 20px;
+  color: #1c2844;
+  margin: 30px 0 45px 0;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-textBox .best-wrap-contents {
+  font-size: 1.25rem;
+  color: #4c566c;
+  line-height: 1.5;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(50px);
+  transition-delay: 0.4s;
+  transition-property: transform, opacity;
+  will-change: transform, opacity;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-textBox .best-wrap-contents span {
+  display: block;
+  margin-top: 2rem;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-mini-img {
+  display: flex;
+  gap: 45px;
+  margin-top: 80px;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(50px);
+  transition-delay: 0.6s;
+  transition-property: transform, opacity;
+  will-change: transform, opacity;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-mini-img div:nth-child(2) a {
+  background-color: #d8d4c9;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-mini-img div:nth-child(3) a {
+  background-color: #e7e4de;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-mini-img div a {
+  display: block;
+  width: 170px;
+  height: 165px;
+  border-radius: 20px;
+  background-color: #c8b19f;
+  transition: 0.4s;
+}
+.best .best-inner .best-items .best-rigth-wrap .best-mini-img div a.active {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+.best .best-inner .best-items .best-rigth-wrap .best-mini-img div a:hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+.best .best-inner .best-items .best-rigth-wrap .best-mini-img div a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.2));
+}
+.best .best-inner .best-btn {
+  width: fit-content;
+  margin: auto;
+}
+.best .best-inner .best-btn .more-ani {
+  transition: 0.5s;
+}
+.best .best-inner .best-btn:hover .more-ani {
+  transform: translateX(30px);
+}
+.best .best-inner .best-btn a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #1c2844;
+  font-family: "Kaisei Tokumin", serif;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="../css/sub-page03.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>best sleep</title>
+</head>
+
+<body>
+  <!-- header 희주 -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../images/01.header/header-logo.svg" alt="로고" />
+        </a>
+      </div>
+      <ul class="gnb">
+        <li><a href="#none">수면과학</a></li>
+        <li>
+          <a href="sub-page01.html">침대</a>
+          <div class="sub-menu">
+            <a href="sub-page01.html">제품보기</a>
+            <a href="sub-page01.html">매트리스</a>
+            <a href="sub-page01.html">침대프레임</a>
+          </div>
+        </li>
+        <li><a href="#none">미디어</a></li>
+        <li><a href="sub-page02.html">쇼룸안내</a></li>
+        <li><a href="#none">실제후기</a></li>
+        <li><a href="sub-page03.html">프로모션</a></li>
+      </ul>
+      <div class="login">
+        <a href="login.html" class="lock">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 11V7C8 5.66667 8.8 3 12 3C13.9103 3 14.9653 3.95032 15.5054 5M8 11H5V21H19V11H8Z"
+              stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="login.html" class="myPage">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 15H8C5.79086 15 4 16.7909 4 19V21H20V19C20 16.7909 18.2091 15 16 15Z" stroke="#000000"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+              stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#none" class="search">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 20L15.8033 15.8033M18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18C14.6421 18 18 14.6421 18 10.5Z"
+              stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+      <!-- 햄버거 -->
+      <a href="#none" class="trigger-wrap">
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+      <!-- 안보였다가 나타나는 item -->
+      <div class="header-item">
+        <!-- 돋보기 눌렀을 때 나오는 팝업창 -->
+        <div class="main-search">
+          <div class="main-search-btn">
+            <a href="#none"></a>
+          </div>
+          <form class="main-search-box">
+            <label>
+              <input type="search" placeholder="Search" />
+              <button type="submit">
+                <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 20L15.8033 15.8033M18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18C14.6421 18 18 14.6421 18 10.5Z"
+                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
+        <!-- trigger눌렀을 때 나오는 사이트 맵 -->
+        <div class="site-map">
+          <div class="site-map-login">
+            <a href="login.html" class="lock">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 11V7C8 5.66667 8.8 3 12 3C13.9103 3 14.9653 3.95032 15.5054 5M8 11H5V21H19V11H8Z"
+                  stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="login.html" class="myPage">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 15H8C5.79086 15 4 16.7909 4 19V21H20V19C20 16.7909 18.2091 15 16 15Z" stroke="#ffffff"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                  stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <div class="site-map-search">
+            <form class="main-search-box">
+              <label>
+                <input type="search" placeholder="궁금하신 제품을 빠르게 찾아보세요." />
+                <button type="submit">
+                  <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20 20L15.8033 15.8033M18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18C14.6421 18 18 14.6421 18 10.5Z"
+                      stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </label>
+            </form>
+          </div>
+          <ul class="site-map-gnb">
+            <li><a href="#none">수면과학</a></li>
+            <li>
+              <a class="chose" href="#none">침대</a>
+              <div class="sub-menu">
+                <a href="sub-page01.html">제품보기</a>
+                <a href="sub-page01.html">매트리스</a>
+                <a href="sub-page01.html">침대프레임</a>
+              </div>
+            </li>
+            <li><a href="#none">미디어</a></li>
+            <li><a href="sub-page02.html">쇼룸안내</a></li>
+            <li><a href="#none">실제후기</a></li>
+            <li><a href="sub-page03.html">프로모션</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- qickmenu 진영-->
+  <aside class="quickmenu">
+    <div class="quickbtn">
+      <a href="#none">
+        <img src="../images/11.modal-quickMenu/quick01.svg" alt="quick01">
+        플친할인
+      </a>
+    </div>
+    <div class="quickbtn">
+      <a href="#none">
+        <img src="../images/11.modal-quickMenu/quick02.svg" alt="quick02">
+        상담하기
+      </a>
+    </div>
+    <div class="quickbtn">
+      <a href="#">
+        <img src="../images/11.modal-quickMenu/quick03.svg" alt="quick03">
+        TOP
+      </a>
+    </div>
+  </aside>
+
+  <section class="sub-page03">
+    <div class="main-event">
+      <div class="main-event-title">
+        <h4>네이버 카페 X 메이크마이웨딩</h4>
+        <h1>혼수 커뮤니티 1등!</h1>
+        <span></span>
+        <h1>베스트 슬립 <img src="../images/14.sub-page03/eyes.svg" alt="eyes-icon"></h1>
+        <span></span>
+        <h6>* 네이버 카페 메이크마이웨딩 후기 기준 2023 12월</h6>
+        <div class="main-icon">
+          <img src="../images/14.sub-page03/main-decorating-icon.svg" alt="decorating-icon">
+          <img src="../images/14.sub-page03/main-decorating-icon2.svg" alt="decorating-icon2">
+          <img src="../images/14.sub-page03/main-bg-font.svg" alt="font">
+          <img src="../images/14.sub-page03/main-bg-font2.svg" alt="font2">
+        </div>
+      </div>
+    </div>
+    <div class="event-gift-content">
+      <div class="gift-content-title">
+        <h2>메이크마이웨딩 회원전용 특별혜택<br>사용 후기 작성 시 선물 증정</h2>
+        <h5>*메이크마이웨딩 카페 정책상 혼수를 준비하시는 분에게만 적용되는 이벤트입니다.</h5>
+        <p>*기프티콘은 발송 전 개별 연락 드립니다.</p>
+      </div>
+      <div class="gift-product-wrap">
+        <div class="gift-product">
+          <img src="../images/14.sub-page03/gift-product-img1.png" alt="product-img1">
+          <div class="gift-product-desc">
+            <h5>구매 후기 작성 시</h5>
+            <h3>마이크로화이버 베개 증정<br>+호텔 순면 베개 커버</h3>
+            <button>총 200,000 상당</button>
+          </div>
+        </div>
+        <div class="gift-product">
+          <img src="../images/14.sub-page03/gift-product-img2.png" alt="product-img2">
+          <div class="gift-product-desc">
+            <h5>한 달 리얼 후기 작성 시</h5>
+            <h3>필로우 스프레이<br>& 사쉐 증정</h3>
+            <button>총 100,000 상당</button>
+          </div>
+        </div>
+        <div class="gift-product">
+          <img src="../images/14.sub-page03/gift-product-img3.png" alt="product-img3">
+          <div class="gift-product-desc">
+            <h5>한 달 리얼 후기 작성 시</h5>
+            <h3>스타벅스 카페라떼<br>쿠폰 추가 증정</h3>
+            <button>총 20,000 상당</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="event-step1">
+      <div class="step1-title">
+        <h2>STEP1. 메이크마이웨딩 카페 가입</h2>
+        <img src="../images/14.sub-page03/step1-title-icon.svg" alt="title-icon">
+      </div>
+      <div class="step1-card-wrap">
+        <div class="step1-card">
+          <span>1</span>
+          <div class="card-sub-title">
+            <h3>메이크마이웨딩 카페 접속</h3>
+            <h4>검색창 또는 URL 접속</h4>
+            <h4>https://makemywedding.co.kr/</h4>
+          </div>
+          <img src="../images/14.sub-page03/step1-img1.png" alt="step1-img1">
+        </div>
+        <div class="step1-card">
+          <span>2</span>
+          <div class="card-sub-title">
+            <h3>카페 가입하기</h3>
+            <ol>
+              <li>이름, SNS 종류, SNS 아이디</li>
+              <li>수취인명, 카페 가입 날짜</li>
+              <li>베스트 슬립 or 브랜드리스 소개로 회원가입</li>
+              <li>연락처 기입</li>
+            </ol>
+          </div>
+          <img src="../images/14.sub-page03/step1-img2.png" alt="step1-img2">
+        </div>
+        <div class="step1-card">
+          <span>3</span>
+          <div class="card-sub-title">
+            <h3>가입 대기중</h3>
+            <h4>가입 조건 충족이 안될 시 기입이 제한될 수 있으며,</h4> 
+            <h4>해당 가입절차는 메이크마이웨딩 카페 내 정책으로</h4> 
+            <h4>베스트슬립, 브랜드리스와 무관합니다.</h4> 
+            <p>*기입 관련은 메이크마이웨딩 내 공지사항 참고 부탁드립니다.</p>
+          </div>
+          <img src="../images/14.sub-page03/step1-img3.png" alt="step1-img3">
+        </div>
+      </div>
+    </div>
+    <div class="apply">
+      <div class="apply-guide">
+        <div class="apply-title-wrap">
+          <img src="../images/14.sub-page03/apply-icon.png" alt="hands">
+          <div class="apply-title">
+            <h2>STEP2. 응모하기</h2>
+            <img src="../images/14.sub-page03/apply-icon2.svg" alt="title-icon">
+          </div>
+        </div>
+      </div>
+      <div class="apply01">
+        <div class="apply01-title-wrap">
+          <div class="apply01-left">
+            <span>01</span>
+            <h3>베스트슬립 카카오톡<br>플러스 친구를 추가해주세요 :&#41;</h3>
+            <h5>베스트슬립 플러스 친구QR >></h5>
+          </div>
+          <div class="apply01-right">
+            <img src="../images/14.sub-page03/apply01-QR.svg" alt="QR">
+          </div>
+        </div>
+        <img class="triangle" src="../images/14.sub-page03/apply01-triangle.svg" alt="triangle">
+      </div>
+      <div class="apply02">
+        <div class="apply02-wrap">
+          <div class="apply02-top">
+            <div class="apply02-title">
+              <span>02</span>
+              <h3>카페에 체험관 방문 실사용 후기를 남겨주세요.</h3>
+              <h3>( 아래 두 곳 중 택 1 )</h3>
+            </div>
+            <div class="select-review">
+              <div class="select-review-box">
+                <h4>제휴&#41; 가구/매트리스</h4>
+                <h4>[베스트슬립 수지점] Z8 블랙 구매 후기</h4>
+                <img src="../images/14.sub-page03/apply2-icon.png" alt="hands">
+              </div>
+              <div class="select-review-box">
+                <h4>제휴&#41; 가구/매트리스/침구커텐 견적</h4>
+                <h4>[베스트슬립 수지점] Z8 블랙 구매 후기</h4>
+                <img src="../images/14.sub-page03/apply2-icon.png" alt="hands">
+              </div>
+            </div>
+          </div>
+          <div class="apply02-bottom">
+            <ul class="apply02-review-list">
+              <li>작성 위치
+                <ul>
+                  <li>메이크마이웨딩 카페 내 제휴&#41; 가구 / 매트리스 게시판</li>
+                  <li>메이크 마이 웨딩 카페 내 가구 / 매트리스 / 침구커텐 견적 게시판</li>
+                </ul>
+              </li>
+              <li>작성 제목
+                <ul>
+                  <li>[방문하신 체험관명] + 방문후기 / 구매후기 / 한 달 후기 등</li>
+                </ul>
+              </li>
+              <li>작성 내용
+                <ul>
+                  <li>사진 첨부 + 만족하신 내용으로 정성껏 500자 이상 작성</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <h5>전가 총 24만원 상당! 마이크로화이버 베개 2개 + 호텔 베개커버 2매 증정</h5>
+          <h6>*사진 첨부는 필수입니다. 한 달 후기는 제목에 한 달 후기와 함께 기재해 주세요.</h6>
+        </div>
+        <img class="triangle" src="../images/14.sub-page03/apply02-triangle.svg" alt="triangle">
+      </div>
+      <div class="apply03">
+        <div class="apply03-wrap">
+          <div class="apply03-top">
+            <div class="apply03-title">
+              <span>03</span>
+              <h3>메일로 작성한 후기를 보내주세요</h3>
+              <h4><img src="../images/14.sub-page03/apply03-icon.svg" alt="email-icon">bestphotoreview@gmail.com</h4>
+            </div>
+          </div>
+          <div class="apply03-bottom">
+            <div class="apply03-write-step">
+              <h4>작성 제목</h4>
+              <div class="step-arrow">
+                <span></span>
+                <img src="../images/14.sub-page03/apply03-icon2.svg" alt="triangle">
+              </div>
+              <ul class="write-step-list">
+                <li>방문하신 체험관명</li>
+                <li>수취인명</li>
+                <li>연락처</li>
+                <li>계약 품목명</li>
+              </ul>
+            </div>
+            <div class="apply03-write-step">
+              <h4>메일 내용 첨부</h4>
+              <div class="step-arrow">
+                <span></span>
+                <img src="../images/14.sub-page03/apply03-icon2.svg" alt="triangle">
+              </div>
+              <ul class="write-step-list">
+                <li>카페에 작성한 후기 URL</li>
+                <li>후기글 캡쳐 이미지</li>
+              </ul>
+            </div>
+            <div class="apply03-write-step">
+              <h4>메일 보내기</h4>
+              <div class="step-arrow">
+                <span></span>
+                <img src="../images/14.sub-page03/apply03-icon2.svg" alt="triangle">
+              </div>
+              <ul class="write-step-list">
+                <li>상단 메일 주소로 메일 전송</li>
+                <li>사은품 증정까지 약 2~3주 가량 소요</li>
+              </ul>
+            </div>
+            <h4><img src="../images/14.sub-page03/apply03-icon3.png" alt="congratulations">참여 완료!</h4>
+          </div>
+        </div>
+      </div>
+      <div class="check-list">
+        <div class="check-list-wrap">
+          <div class="check-list-title">
+            <img src="../images/14.sub-page03/apply-check-list-icon.svg" alt="check-box">
+            <h3>잠깐! 응모 완료 전 확인해 주세요 :&#41;</h3>
+          </div>
+          <div class="check-list-box">
+            <ol class="check-list-content">
+              <li>베스트 슬립 카카오톡 플러스 친구 미추가 시, 이벤트 대상 조건에 부합되지 않을 수 있습니다.</li>
+              <li>후기 내용에는 반드시 체험관 및 사용하고 계신 매트리스 사진을 첨부해 주세요.</li>
+              <li>해당 이벤트는 조기 마감될 수 있습니다.</li>
+              <li>한 달 후기 하나 당 증정되며, 중복 증정은 어렵습니다.</li>
+              <li>후기 이벤트 사은품의 경우 중복 증정은 어렵습니다.</li>
+            </ol>
+            <div class="contact-us">
+              <h4>* 본 이벤트 관련하여 문의 사항이 있는 경우 아래 연락처로 문의 바랍니다.</h4>
+              <div class="contact-box">
+                <button>Tel</button>
+                <button>E-mail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- footer 진영-->
+  <footer class="footer">
+    <!-- 푸터 제일 아래부분 -->
+    <div class="footer-bottom">
+      <div class="logo">
+        <img src="../images/10.footer/footer-logo.svg" alt="footer-logo">
+      </div>
+      <p>
+        소재지 : 서울특별시 강남구 테헤란로8길 42 (역삼동) 퍼스트역삼빌딩 3층 06240 전화 : 1522-7247 AS접수 : AS신청서작성 특판/대량구매/제휴/입점문의 :
+        cs001@corporatez.us<br>상호명 : 지큐브스페이스 주식회사 / 사업자 등록번호 : 233-81-04610 / 통신판매신고 : 제2017-서울 강남 -04488호 / 대표이사 : 서진원
+        / 개인정보책임자 : 서진원<br>Copyright ⓒ 2023 Bestsleep Z Cube. |<a href="https://bestsleep.us/shopinfo/term.html"
+          target="_blank"> 이용약관</a> | <a href="https://bestsleep.us/member/privacy.html" target="_blank">개인정보취급방침</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="../script/main-slide-bg.js"></script>
+  <script src="../script/quick-menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+/* font */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap");
+/* font */
+/* main-color */
+/* gray-scale */
+/* navy-color */
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.header .header-inner .logo {
+  z-index: 10;
+}
+.header .header-inner .gnb a {
+  color: #1c2844;
+  font-weight: 500;
+}
+.header .header-inner .login a svg path {
+  stroke: #1c2844;
+}
+
+/* map */
+.mapIconBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.mapTextBox {
+  width: max-content;
+  background-color: #fff;
+  border: 1px solid #1c2844;
+  padding: 5px 1rem;
+  border-radius: 30px;
+}
+
+.mapTextBox h4 {
+  margin: 0;
+}
+
+.FindStore .FindStore-inner {
+  padding-top: 200px;
+  padding-bottom: 120px;
+}
+.FindStore .FindStore-inner .FindStore-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.FindStore .FindStore-inner .FindStore-title p {
+  margin-top: 20px;
+  font-size: 26px;
+  color: #4c566c;
+  font-weight: 500;
+}
+.FindStore .FindStore-inner .FindStore-showroom {
+  display: flex;
+  border: 1px solid rgba(214, 214, 214, 0.226);
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox {
+  width: 470px;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox form {
+  border-bottom: 2px solid #d9d9d9;
+  display: flex;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox form select {
+  border: none;
+  background-color: #7a8191;
+  color: #fff;
+  padding: 1rem;
+  font-size: 22px;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox form input {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding-left: 20px;
+  outline: none;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox form input::placeholder {
+  font-size: 16px;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox form input::-webkit-search-decoration, .FindStore .FindStore-inner .FindStore-showroom .showroom-listBox form input::-webkit-search-cancel-button, .FindStore .FindStore-inner .FindStore-showroom .showroom-listBox form input::-webkit-search-results-button, .FindStore .FindStore-inner .FindStore-showroom .showroom-listBox form input::-webkit-search-results-decoration {
+  display: none;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox form button {
+  border: none;
+  background: #f8f8f8;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox form button img {
+  width: 25px;
+  margin-right: 10px;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .result {
+  position: relative;
+  height: 2.5rem;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .result p {
+  margin: 10px 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  color: #4c566c;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .result p span {
+  font-weight: 800;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list {
+  height: 1000px;
+  padding: 0px 25px;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list::-webkit-scrollbar {
+  width: 12px;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list::-webkit-scrollbar-thumb {
+  background-color: #b5b6b8;
+  border-radius: 50px;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list::-webkit-scrollbar-track {
+  background-color: #ececec;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li {
+  border-bottom: 1px solid #d2d4da;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  position: relative;
+  background-color: #fff;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li:hover {
+  background-color: #fafbff;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li a {
+  color: #4c566c;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li h5 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li p {
+  width: 75%;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li span {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #818ba1;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li .heart-icon {
+  width: 26px;
+  height: 24px;
+  background: url(../images/08.showroom/showroom-icon-heart.png) no-repeat;
+  position: absolute;
+  right: 0;
+  top: 2.6rem;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li .heart-icon.on {
+  background-position: -26px 0;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li button {
+  width: 100px;
+  height: 36px;
+  background-color: #42db85;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li button:hover {
+  background-color: #31a061;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-map {
+  width: 75%;
+}
+.FindStore .FindStore-inner .FindStore-showroom .showroom-map #map {
+  height: 100%;
+}
+
+.footer {
+  height: 300px;
+}
+
+@media screen and (max-width: 1024px) {
+  .FindStore .FindStore-inner {
+    padding-top: 100px;
+  }
+  .FindStore .FindStore-inner .FindStore-showroom .showroom-listBox form select {
+    font-size: 18px;
+  }
+  .FindStore .FindStore-inner .FindStore-showroom .showroom-listBox form input::placeholder {
+    font-size: 14px;
+  }
+  .FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list {
+    padding: 0 5px;
+  }
+  .FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li h5 {
+    font-size: 18px;
+  }
+  .FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li p {
+    font-size: 15px;
+  }
+  .FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li span {
+    font-size: 14px;
+  }
+  .FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list li button {
+    width: 80px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .FindStore .FindStore-inner .FindStore-showroom {
+    flex-direction: column;
+  }
+  .FindStore .FindStore-inner .FindStore-showroom .showroom-listBox {
+    width: 100%;
+  }
+  .FindStore .FindStore-inner .FindStore-showroom .showroom-listBox .showroom-list {
+    height: 200px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.027);
+  }
+  .FindStore .FindStore-inner .FindStore-showroom .showroom-map {
+    margin-top: 10px;
+    width: 100%;
+    height: 500px;
+    /*           border: 1px solid #000;
+             width: 100%;
+             height: 100%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             position: fixed;
+             top: 0;
+             z-index: 1000;
+             background-color: rgba(0, 0, 0, 0.4);
+             #map {
+               width: 90%;
+               height: 90%;
+             }
+    */
+  }
+}

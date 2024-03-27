@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import "reset", "variables";
+
+/* 공통 부분 */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+* {
+  font-family: $nomal-font;
+}
+
+.title {
+  font-size: 45px;
+  font-family: $font-title;
+  color: $darkNavy;
+  font-weight: bold;
+}
+
+.inner {
+  max-width: 1400px;
+  width: 90%;
+  margin: auto;
+}
+
+.main-slide-bg,
+.header,
+.main-banner,
+.video-slide,
+.mattress-master,
+.series,
+.review,
+.best,
+.showroom,
+.commend,
+section,
+.footer {
+  width: 100%;
+  max-width: 1980px;
+  margin: auto;
+}
+
+/* mouse click 강조 */
+@mixin mouseCursor {
+  position: relative;
+  img {
+    width: 30px;
+    position: absolute;
+  }
+}
+.header {
+  .gnb {
+    li {
+      >a {
+        @include mouseCursor();
+      }
+    }
+  }
+  .login {
+    >a {
+      @include mouseCursor();
+    }
+  }
+}
+.modal {
+  .modal-wrap {
+    .tab-menu {
+      .event-title {
+        .tabmenu1-btn1 {
+          @include mouseCursor();
+        }
+      }
+    }
+  }
+}
+
+@import "main-slide-bg", "main-banner", "video-slide", "mattress-master", "series", "review", "best", "showroom", "commend", "footer", "quick-menu", "modal", "responsive";

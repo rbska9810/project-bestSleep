@@ -1,0 +1,96 @@
+@import "reset", "variables";
+
+.main-banner {
+  height: 636px;
+  background: $font4;
+  text-align: center;
+  padding: 0.1px;
+
+  .main-wrap {
+    margin: 180px auto 0;
+    position: relative;
+  }
+
+  #circle {
+    width: 300px;
+    padding-bottom: 300px;
+    overflow: hidden;
+    position: absolute;
+    left: 300px;
+    top: -130px;
+
+    svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-animation-name: rotate;
+      -webkit-animation-duration: 10s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+    }
+
+    @-webkit-keyframes rotate {
+      from {
+        -webkit-transform: rotate(360deg);
+      }
+
+      to {
+        -webkit-transform: rotate(0);
+      }
+    }
+  }
+
+  h2 {
+    font-family: $font-title;
+    font-weight: 800;
+    font-size: 3.125rem;
+    cursor: pointer;
+    -webkit-text-stroke: 0.1px #1C2844;
+    background-image: linear-gradient(0deg, #1C2844, #1C2844);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+    transition: background-size 3.5s;
+    position: relative;
+    z-index: 1;
+  }
+
+  h2.fill {
+    background-size: 100% 100%;
+  }
+
+  .left {
+    height: 63px;
+    background-position: 0% 0%;
+    background-size: 0% 100%;
+  }
+
+  .star-icon {
+    margin: 35px 0;
+  }
+
+  p {
+    width: 55%;
+    margin: auto;
+    font-family: $nomal-font;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 30px;
+    color: $navy2;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: .5s;
+    transition-property: transform, opacity;
+    will-change: transform, opacity;
+
+    &.fade {
+      opacity: 1;
+      transform: translateY(0);
+      will-change: auto;
+    }
+
+  }
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="../css/sub-page01.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>best sleep</title>
+</head>
+
+<body>
+  <!-- header 희주 -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../images/01.header/header-logo.svg" alt="로고" />
+        </a>
+      </div>
+      <ul class="gnb">
+        <li><a href="#none">수면과학</a></li>
+        <li>
+          <a href="sub-page01.html">침대</a>
+          <div class="sub-menu">
+            <a href="sub-page01.html">제품보기</a>
+            <a href="sub-page01.html">매트리스</a>
+            <a href="sub-page01.html">침대프레임</a>
+          </div>
+        </li>
+        <li><a href="#none">미디어</a></li>
+        <li><a href="sub-page02.html">쇼룸안내</a></li>
+        <li><a href="#none">실제후기</a></li>
+        <li><a href="sub-page03.html">프로모션</a></li>
+      </ul>
+      <div class="login">
+        <a href="login.html" class="lock">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 11V7C8 5.66667 8.8 3 12 3C13.9103 3 14.9653 3.95032 15.5054 5M8 11H5V21H19V11H8Z"
+              stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="login.html" class="myPage">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 15H8C5.79086 15 4 16.7909 4 19V21H20V19C20 16.7909 18.2091 15 16 15Z" stroke="#000000"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+              stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#none" class="search">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 20L15.8033 15.8033M18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18C14.6421 18 18 14.6421 18 10.5Z"
+              stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+      <!-- 햄버거 -->
+      <a href="#none" class="trigger-wrap">
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+      <!-- 안보였다가 나타나는 item -->
+      <div class="header-item">
+        <!-- 돋보기 눌렀을 때 나오는 팝업창 -->
+        <div class="main-search">
+          <div class="main-search-btn">
+            <a href="#none"></a>
+          </div>
+          <form class="main-search-box">
+            <label>
+              <input type="search" placeholder="Search" />
+              <button type="submit">
+                <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 20L15.8033 15.8033M18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18C14.6421 18 18 14.6421 18 10.5Z"
+                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
+        <!-- trigger눌렀을 때 나오는 사이트 맵 -->
+        <div class="site-map">
+          <div class="site-map-login">
+            <a href="login.html" class="lock">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 11V7C8 5.66667 8.8 3 12 3C13.9103 3 14.9653 3.95032 15.5054 5M8 11H5V21H19V11H8Z"
+                  stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="login.html" class="myPage">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 15H8C5.79086 15 4 16.7909 4 19V21H20V19C20 16.7909 18.2091 15 16 15Z" stroke="#ffffff"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                  stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <div class="site-map-search">
+            <form class="main-search-box">
+              <label>
+                <input type="search" placeholder="궁금하신 제품을 빠르게 찾아보세요." />
+                <button type="submit">
+                  <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20 20L15.8033 15.8033M18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18C14.6421 18 18 14.6421 18 10.5Z"
+                      stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </label>
+            </form>
+          </div>
+          <ul class="site-map-gnb">
+            <li><a href="#none">수면과학</a></li>
+            <li>
+              <a class="chose" href="#none">침대</a>
+              <div class="sub-menu">
+                <a href="sub-page01.html">제품보기</a>
+                <a href="sub-page01.html">매트리스</a>
+                <a href="sub-page01.html">침대프레임</a>
+              </div>
+            </li>
+            <li><a href="#none">미디어</a></li>
+            <li><a href="sub-page02.html">쇼룸안내</a></li>
+            <li><a href="#none">실제후기</a></li>
+            <li><a href="sub-page03.html">프로모션</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- qickmenu 진영-->
+  <aside class="quickmenu">
+    <div class="quickbtn">
+      <a href="#none">
+        <img src="../images/11.modal-quickMenu/quick01.svg" alt="quick01">
+        플친할인
+      </a>
+    </div>
+    <div class="quickbtn">
+      <a href="#none">
+        <img src="../images/11.modal-quickMenu/quick02.svg" alt="quick02">
+        상담하기
+      </a>
+    </div>
+    <div class="quickbtn">
+      <a href="#">
+        <img src="../images/11.modal-quickMenu/quick03.svg" alt="quick03">
+        TOP
+      </a>
+    </div>
+  </aside>
+
+  <section class="shop-top">
+    <h2>침대프레임</h2>
+  </section>
+  <section class="main-shop">
+    <div class="shop-left">
+      <div class="shop-left-move">
+        <div class="item-length">
+          <p>총 <span>18</span>건</p>
+        </div>
+        <form class="shop-search">
+          <a href="#none" class="shop-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <input type="text" placeholder="검색어를 입력해주세요">
+          <a href="#none">
+            <img src="../images/12.sub-page01/search.svg" alt="image">
+          </a>
+        </form>
+        <ul class="shop-nav">
+          <li class="nav-click">
+            <a href="#none">매트리스
+              <div class="plus-icon">
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+            <div class="shop-nav-sub">
+              <a href="#none">Z SERIES</a>
+              <a href="#none">W SERIES</a>
+              <a href="#none">L SERIES</a>
+              <a href="#none">M SERIES</a>
+              <a href="#none">SM SERIES</a>
+            </div>
+          </li>
+          <li class="nav-click">
+            <a href="#none">침대프레임
+              <div class="plus-icon">
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+            <div class="shop-nav-sub">
+              <a href="#none">HANDMADE SERIES</a>
+              <a href="#none">TWO MATTRESS SERIES</a>
+              <a href="#none">HEADBOARDS</a>
+              <a href="#none">ADJUSTABLE BED</a>
+            </div>
+          </li>
+          <li><a href="#none" class="wishlist">위시리스트</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="shop-content">
+      <p>
+        <a class="on" href="#none">추천순</a>
+        <a href="#none">가격순</a>
+      </p>
+      <div class="shop-items"></div>
+      <button class="more-btn">더보기</button>
+    </div>
+    <div class="shop-modal-bg">
+      <div class="shop-modal">
+        <div class="swiper shop-modal-left">
+          <h3 class="modal-title">고객님의 <span>위시리스트</span>입니다.</h3>
+          <div class="swiper-wrapper"></div>
+        </div>
+        <div class="shop-modal-right">
+          <div class="right-top-bg">
+            <p>베스트슬립으로<br />나만의 침대를 만나보세요</p>
+          </div>
+          <div class="modal-icon-wrap">
+            <div>
+              <a href="sub-page02.html">
+                <img src="../images/12.sub-page01/modal-icon-showroom.png" alt="icon">
+                쇼룸안내
+              </a>
+            </div>
+            <div>
+              <a href="#none">
+                <img src="../images/12.sub-page01/cart-icon.png" alt="icon">
+                장바구니 담기
+              </a>
+            </div>
+            <a href="#none" class="close-icon">
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- footer 진영-->
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="logo">
+        <img src="../images/10.footer/footer-logo.svg" alt="footer-logo">
+      </div>
+      <p>
+        소재지 : 서울특별시 강남구 테헤란로8길 42 (역삼동) 퍼스트역삼빌딩 3층 06240 전화 : 1522-7247 AS접수 : AS신청서작성 특판/대량구매/제휴/입점문의 :
+        cs001@corporatez.us<br>상호명 : 지큐브스페이스 주식회사 / 사업자 등록번호 : 233-81-04610 / 통신판매신고 : 제2017-서울 강남 -04488호 / 대표이사 : 서진원
+        / 개인정보책임자 : 서진원<br>Copyright ⓒ 2023 Bestsleep Z Cube. |<a href="https://bestsleep.us/shopinfo/term.html"
+          target="_blank"> 이용약관</a> | <a href="https://bestsleep.us/member/privacy.html" target="_blank">개인정보취급방침</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="../script/main-slide-bg.js"></script>
+  <script src="../script/quick-menu.js"></script>
+  <script src="../script/sub-page01.js"></script>
+</body>
+
+</html>
